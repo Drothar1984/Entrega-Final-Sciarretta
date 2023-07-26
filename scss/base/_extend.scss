@@ -1,4 +1,25 @@
 //extend
+@import "../base/variables";
 
-@import "variables";
-@import "mixin";
+
+%desplegable{
+    transition: 1s;
+}
+
+%animacion-boton{
+    box-shadow: 20px 20px 60px rgb(187, 187, 187);     
+    transition: 1s; 
+}
+
+
+%titulos{
+    color: $color-principal-secundario;
+    text-decoration: underline black solid 3px;
+}
+
+%estilos{
+    text-align: justify;
+    font-family: $parrafo-principal;      
+    white-space: pre-line; /*saltos de linea en el texto*/   
+    color: $color-parrafo-primaria; 
+}

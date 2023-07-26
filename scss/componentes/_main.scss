@@ -3,3 +3,210 @@
 @import "../base/extend";
 @import "../base/mixin";
 @import "../base/variables";
+
+
+/*-------------------------MAIN----------------------------------------*/
+
+
+/*---------------------- pagina principal ------------------------------*/
+
+main{
+    //para que ocupe el 80% de lo disponible
+    height: 80vh;
+    //hace que el contenido principal ocupe todo el espacio disponible en el eje vertical
+    flex: 1;
+    //distancia entre los elementos
+    padding: 1px;
+
+        //estilos del titulo secundario
+        section .index-main-titulo{
+            @include titulo-secundario;
+            @extend %titulos;      
+                   
+        }
+    /*estilos al contenedor div contenedor*/
+
+        .index-main-contenedor{
+            max-height: 90vh;    
+            display: grid;
+            grid-template-areas: 
+            "titulo"
+            "escritura"
+            "boton";
+            justify-content: center;
+            align-items: center;
+            gap: 1%;
+            margin: 1%;
+
+                /*estilos al contenedor del titulo de la division*/
+                .index-contenedor-titulo{
+                    text-align: center;
+                    grid-area: titulo;                    
+
+                        /*estilos directos al titulo de la division*/
+                        .index-contenedor-titutlo-h3{
+                            font-size: 2rem;                                
+                            @extend %titulos;
+                        }
+                }
+
+                /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
+                .index-contenedor-parrafo{
+                    grid-area: escritura; 
+                
+                        /*estilos al parrafo*/
+                        .index-contenedor-parrafo-escrito{                            
+                            font-size: 0.8em;  
+                            @extend %estilos;
+                        }
+                }
+
+                /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
+                .index-contenedor-boton{
+                    grid-area: boton;
+                    display: flex;
+                    justify-content: center;
+
+                        /*estilos al boton*/
+                        button{
+                            background-color: $color-principal-primario;
+                            border: 5px solid $color-principal-secundario;
+                            height: 50px;
+                            width: 150px;
+                            margin-top: 1px;
+                            text-align: center;                                                               
+                            @include boton-animado;
+                                &:hover{
+                                    background-color: $color-principal-primario-hover;
+                                    border: 5px solid $color-principal-secundario-hover;
+                                    @include boton-animado-hover;
+                                        a{
+                                            color: $color-principal-primario;
+                                                &:hover{
+                                                    color: rgb(46, 46, 46);
+                                                }
+                                        }
+                                }
+                                    a{
+                                        color: $color-principal-secundario;
+                                    }
+                        } 
+                }
+
+                /*estilos al contenedor de la imagen -- simplemente se le determino el area del grid*/
+                .index-contenedor-imagen{                    
+                    grid-area: imagen;
+
+                        /*estilos a la imagen*/
+                        .index-contenedor-imagen-img{
+                            /*por el tamaño de la pantalla celular ocultamos la imagen*/   
+                            display: none;
+                            
+                        }
+                }
+        }
+}
+
+    
+
+
+
+
+//estilos al cambio de tamaño a tablet
+
+@media screen and (min-width: 600px) {
+    
+        //titulo secundario
+        body main{
+            height: 80vh;
+        
+                section .index-main-titulo{
+                    margin-top: 1rem;
+                    font-size: 5rem;
+                    text-align: center;   
+                    color: $color-principal-secundario;
+                    text-decoration: underline black solid 3px;
+                }
+                
+                .index-main-contenedor{
+                    display: grid;
+                    grid-template-areas: 
+                    "titulo     titulo"
+                    "escritura  imagen"            
+                    "boton      imagen";
+                    justify-content: center;
+                    align-items: center;           
+                
+                        .index-contenedor-titulo{
+                            text-align: center;
+                            grid-area: titulo;
+                
+                                .index-contenedor-titutlo-h3{
+                                    font-size: 3em;                        
+                                }
+                        }
+                
+                        .index-contenedor-parrafo{
+                            grid-area: escritura; 
+                        
+                                .index-contenedor-parrafo-escrito{                        
+                                    font-size: 1.2em;
+                                }
+                        }
+                
+                        .index-contenedor-boton{
+                            grid-area: boton;
+                                
+                        }
+                
+                        .index-contenedor-imagen{            
+                            grid-area: imagen;
+                            display: block;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                                .index-contenedor-imagen-img{
+                                    display: block;
+                                    max-width: 70%;
+                                    height: auto;
+                                    
+                                }
+                        }
+                }
+        }    
+}
+
+
+
+//estilos al cambio de tamaño a pc
+
+@media screen and (min-width: 1000px) {
+   
+    
+        //titulo secundario
+        body main section .index-main-titulo{
+            display: none;
+            
+        }
+
+        div .index-contenedor-titulo{
+            margin-top: 0px;
+            grid-area: titulo;
+
+                .index-contenedor-titutlo-h3{
+                    margin-top: 0px;
+                    font-size: 4em;                        
+                }
+        }
+        
+        .index-contenedor-parrafo{
+            grid-area: escritura; 
+                
+                .index-contenedor-parrafo-escrito{                                                
+                    font-size: 1.2em;
+                }
+        }
+}
+    
+        
+

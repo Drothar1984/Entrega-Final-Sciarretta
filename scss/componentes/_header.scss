@@ -3,3 +3,69 @@
 @import "../base/extend";
 @import "../base/mixin";
 @import "../base/variables";
+
+/*HEADER - NAVEGADOR*/
+
+body header nav{ 
+    @include barra-nav;
+
+        .index-menu-contenedor{
+            display: flex;
+            align-items: center;
+    
+                .index-menu-contenedor-img{
+                    @include img-nav;
+                }
+
+                .index-menu-contenedor-boton{    
+                    justify-content: start;
+                    align-self: center;
+                    
+                        div ul{
+                            background-color: $color-menu-nav;
+                            @extend %desplegable;
+                                 
+                                li a:hover{
+                                    background-color: $color-hover-menu;
+                                    color: $color-hover-menu-letras;
+                                    @extend %animacion-boton;
+                                                   
+                                       
+                                }
+                        }
+                }
+                
+        }
+
+        h1{
+            @include titulo-principal;            
+            display: none;            
+        }
+        
+}
+
+           
+
+        
+    
+    //estilos al cambio de tamaño a tablet
+    
+    @media screen and (min-width: 600px) {
+    
+        
+    }
+    
+    
+    //estilos al cambio de tamaño a pc
+    
+    @media screen and (min-width: 1300px) {
+    
+        body header .index-menu h1{
+                
+            display: block;
+    
+        
+        }
+    }
+        
+    

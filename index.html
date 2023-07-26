@@ -15,12 +15,93 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="body-index">
+    <!--inicio header-->
+    <header>
+        <!--contenedor general del nav-->
+        <nav class="index-menu">
+            
+            <div class="index-menu-contenedor">
+                <!-- imagente logo nav izquierdo -->
+                <img src="scss/assets/policia de la ciudad.png" alt="logo de la policia de la ciudad" class="index-menu-contenedor-img">            
+                <!-- boton del menu nav-->
+                <ul class="index-menu-contenedor-boton">
+                    <!-- menu hamburguesa de bootstrap-->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Menu de la División
+                        </a>
+                        <!--paginas del menu-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/nosotros.html">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="pages/identidad.html">Sustraccion de Identidiad</a></li>
+                            <li><a class="dropdown-item" href="pages/phising.html">Phising</a></li>
+                            <li><a class="dropdown-item" href="pages/skimming.html">Skimming</a></li>
+                            <li><a class="dropdown-item" href="pages/compromiso.html">Punto de Compromiso</a></li>
+                            <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+                        </ul>                                           
+                </ul>
+            </div>
+            <!-- titulo principal -->
+            <h1 class="index-menu-titulo">
+                    Policia de la ciudad
+            </h1>
+            
+        </nav>
+
+    </header>
+
+    <!--inicio main-->
+    <main class="index-main">
+        
+        <!-- titulo secundario -->
+        <section>
+            <h2 class="index-main-titulo">
+              Policia de la Ciudad
+            </h2>
+        </section>
+        <!--contenedor del main principal -->
+        <div class="index-main-contenedor">
+            <!--titulo de la division-->
+            <div class="index-contenedor-titulo">
+                <h3 class="index-contenedor-titutlo-h3">
+                    Division Fraudes Bancarios
+                </h3>
+            </div>
+            <!--contenedor del parrafo-->
+            <div class="index-contenedor-parrafo">
+                <p class="index-contenedor-parrafo-escrito">
+                La misión de la División Fraudes Bancarios es prevenir, detectar e investigar cualquier actividad fraudulenta que se pueda llevar a cabo en el ámbito bancario. Esta división tiene como objetivo principal proteger a los clientes y a la instituciones financieras contra cualquier tipo de fraude, incluyendo el robo de identidad, la suplantación de cuentas, la falsificación de documentos, el fraude electrónico y cualquier otra forma de fraude financiero.
+                    
+                Para cumplir con esta misión, se trabaja en estrecha colaboración con otros departamentos de la institución financiera, así como con autoridades gubernamentales y otras organizaciones de la industria financiera. También se encarga de desarrollar y aplicar políticas, procedimientos y tecnologías avanzadas para detectar y prevenir los fraudes bancarios. 
+                    
+                En definitiva, la misión de la División Fraudes Bancarios es proteger la integridad y la reputación de la institución financiera, así como garantizar la confianza y la seguridad de los clientes y del sistema financiero en general.
     
+                </p>
+            </div>
+            <!--contenedor del boton-->
+            <div class="index-contenedor-boton">
+                <button class="index-contenedor-boton-estilo">
+                <a href="pages/nosotros.html">Bienvenidos</a>
+                </button>
+            </div>
+            <!--contenedor de la foto principal-->
+            <div class="index-contenedor-imagen">
+                <img src="scss/assets/foto-principal.jpg" alt="imagen ilustrativa de la division fraudes bancarios" class="index-contenedor-imagen-img">
+            </div>
+        </div>
+            
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <p>
+            ® 2023 Drotar-Team, Todos los derechos reservados
+        </p>
 
-
+    </footer>
 
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
+</html>
 </html>

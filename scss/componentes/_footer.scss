@@ -3,3 +3,16 @@
 @import "../base/extend";
 @import "../base/mixin";
 @import "../base/variables";
+
+
+/*-------------- FOOTER ------------------*/
+
+/*FOOTER AL FONDO*/
+
+footer p{    
+    display: flex;
+    justify-content: center;    
+    margin-top: 1px;
+    padding: 1px;   
+    color: $color-footer-primario; 
+}

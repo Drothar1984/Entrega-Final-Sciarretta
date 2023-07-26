@@ -1,4 +1,61 @@
-//MIXIN
-
 @import "variables";
-@import "extend";
+
+//BARRA NAV
+
+@mixin barra-nav{
+
+        background-color: $color-nav-principal;
+        /*para que se mueva al scrolear*/
+        position: sticky;   
+        top: 0; 
+        height: 9rem;   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+
+}
+
+//IMAGEN DEL NAV - LOGO
+
+@mixin img-nav{
+        padding: 20px;
+        max-width: 130px;        
+        justify-content: center;
+        align-self: flex-start;
+}
+
+//TITULO PRINCIPAL H1
+
+@mixin titulo-principal{
+        color: $color-titulo-Principal;
+        font-family: $titulo-principal;
+        font-size: 6rem;
+        padding: 20px;
+        display: flex;            
+        align-self: auto;
+}
+
+//TITULO SECUNDARIO - H2 - MAIN
+
+@mixin titulo-secundario{
+        margin-top: 1rem;
+        color: $color-titulo-secundario;
+        font-size: 3rem;
+        text-align: center;
+          
+}
+
+//botones
+
+@mixin boton-animado{                                          
+        border-radius: 10%;
+        transition: 2s;
+}
+    
+@mixin boton-animado-hover{       
+        box-shadow: 20px 20px 60px rgb(52, 52, 52);     
+        background-color: rgb(255, 255, 255); 
+        transition: 2s;
+        border-radius: 100%;
+}

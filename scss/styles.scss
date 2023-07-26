@@ -1,6 +1,35 @@
+//import
+
 @import "componentes/header";
 @import "componentes/main";
 @import "componentes/footer";
 @import "base/extend";
 @import "base/mixin";
 @import "base/variables";
+
+
+// ESTILOS DE PANTALLA GENERAL
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{    
+    scroll-behavior: smooth; //que el movimiento del scroll sea suave
+
+        body{
+
+            //para que solo tenga scroll vertical 
+            overflow-y: auto; 
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            /*para que el contenido ocupe el 100% del alto*/
+            min-height: 100vh;
+        
+        }
+}
+

@@ -1,4 +1,50 @@
 // variables generales
 
-@import "extend";
-@import "mixin";
+
+
+//estilos titulo principal
+
+$color-titulo-Principal: white;
+
+//estilo segundo titulo 
+
+$color-titulo-secundario: black;
+
+//estilos nav principal
+
+$color-nav-principal: black;
+
+//estitos menu nav
+
+$color-menu-nav: rgb(204, 204, 204);
+
+//estilos botones
+
+$color-hover-menu: #6b6b6b;
+
+//estilos letra boton
+
+$color-hover-menu-letras: whitesmoke;
+
+//boton main
+
+$color-principal-primario: #dddddd;
+$color-principal-secundario: #000000;
+
+$color-principal-primario-hover: #6b6b6b;
+$color-principal-secundario-hover: #484848;
+
+
+//estilo letras parrafo
+
+$color-parrafo-primaria: black;
+
+//TIPOGRAFIA
+
+$titulo-principal: Arial, Helvetica, sans-serif;
+
+$parrafo-principal: Arial, Helvetica, sans-serif;
+
+//footer
+
+$color-footer-primario: rgb(134, 134, 134);

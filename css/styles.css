@@ -1,0 +1,255 @@
+@charset "UTF-8";
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
+  transition: 1s; }
+
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:hover {
+  box-shadow: 20px 20px 60px #bbbbbb;
+  transition: 1s; }
+
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+  color: #000000;
+  text-decoration: underline black solid 3px; }
+
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre-line;
+  /*saltos de linea en el texto*/
+  color: black; }
+
+/*HEADER - NAVEGADOR*/
+body header nav {
+  background-color: black;
+  /*para que se mueva al scrolear*/
+  position: sticky;
+  top: 0;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px; }
+  body header nav .index-menu-contenedor {
+    display: flex;
+    align-items: center; }
+    body header nav .index-menu-contenedor .index-menu-contenedor-img {
+      padding: 20px;
+      max-width: 130px;
+      justify-content: center;
+      align-self: flex-start; }
+    body header nav .index-menu-contenedor .index-menu-contenedor-boton {
+      justify-content: start;
+      align-self: center; }
+      body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
+        background-color: #cccccc; }
+        body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:hover {
+          background-color: #6b6b6b;
+          color: whitesmoke; }
+  body header nav h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    padding: 20px;
+    display: flex;
+    align-self: auto;
+    display: none; }
+
+@media screen and (min-width: 1300px) {
+  body header .index-menu h1 {
+    display: block; } }
+
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
+  transition: 1s; }
+
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:hover {
+  box-shadow: 20px 20px 60px #bbbbbb;
+  transition: 1s; }
+
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+  color: #000000;
+  text-decoration: underline black solid 3px; }
+
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre-line;
+  /*saltos de linea en el texto*/
+  color: black; }
+
+/*-------------------------MAIN----------------------------------------*/
+/*---------------------- pagina principal ------------------------------*/
+main {
+  height: 80vh;
+  flex: 1;
+  padding: 1px;
+  /*estilos al contenedor div contenedor*/ }
+  main section .index-main-titulo {
+    margin-top: 1rem;
+    color: black;
+    font-size: 3rem;
+    text-align: center; }
+  main .index-main-contenedor {
+    max-height: 90vh;
+    display: grid;
+    grid-template-areas: "titulo" "escritura" "boton";
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    margin: 1%;
+    /*estilos al contenedor del titulo de la division*/
+    /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
+    /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
+    /*estilos al contenedor de la imagen -- simplemente se le determino el area del grid*/ }
+    main .index-main-contenedor .index-contenedor-titulo {
+      text-align: center;
+      grid-area: titulo;
+      /*estilos directos al titulo de la division*/ }
+      main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+        font-size: 2rem; }
+    main .index-main-contenedor .index-contenedor-parrafo {
+      grid-area: escritura;
+      /*estilos al parrafo*/ }
+      main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+        font-size: 0.8em; }
+    main .index-main-contenedor .index-contenedor-boton {
+      grid-area: boton;
+      display: flex;
+      justify-content: center;
+      /*estilos al boton*/ }
+      main .index-main-contenedor .index-contenedor-boton button {
+        background-color: #dddddd;
+        border: 5px solid #000000;
+        height: 50px;
+        width: 150px;
+        margin-top: 1px;
+        text-align: center;
+        border-radius: 10%;
+        transition: 2s; }
+        main .index-main-contenedor .index-contenedor-boton button:hover {
+          background-color: #6b6b6b;
+          border: 5px solid #484848;
+          box-shadow: 20px 20px 60px #343434;
+          background-color: white;
+          transition: 2s;
+          border-radius: 100%; }
+          main .index-main-contenedor .index-contenedor-boton button:hover a {
+            color: #dddddd; }
+            main .index-main-contenedor .index-contenedor-boton button:hover a:hover {
+              color: #2e2e2e; }
+        main .index-main-contenedor .index-contenedor-boton button a {
+          color: #000000; }
+    main .index-main-contenedor .index-contenedor-imagen {
+      grid-area: imagen;
+      /*estilos a la imagen*/ }
+      main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img {
+        /*por el tamaño de la pantalla celular ocultamos la imagen*/
+        display: none; }
+
+@media screen and (min-width: 600px) {
+  body main {
+    height: 80vh; }
+    body main section .index-main-titulo {
+      margin-top: 1rem;
+      font-size: 5rem;
+      text-align: center;
+      color: #000000;
+      text-decoration: underline black solid 3px; }
+    body main .index-main-contenedor {
+      display: grid;
+      grid-template-areas: "titulo     titulo" "escritura  imagen"             "boton      imagen";
+      justify-content: center;
+      align-items: center; }
+      body main .index-main-contenedor .index-contenedor-titulo {
+        text-align: center;
+        grid-area: titulo; }
+        body main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+          font-size: 3em; }
+      body main .index-main-contenedor .index-contenedor-parrafo {
+        grid-area: escritura; }
+        body main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+          font-size: 1.2em; }
+      body main .index-main-contenedor .index-contenedor-boton {
+        grid-area: boton; }
+      body main .index-main-contenedor .index-contenedor-imagen {
+        grid-area: imagen;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img {
+          display: block;
+          max-width: 70%;
+          height: auto; } }
+
+@media screen and (min-width: 1000px) {
+  body main section .index-main-titulo {
+    display: none; }
+  div .index-contenedor-titulo {
+    margin-top: 0px;
+    grid-area: titulo; }
+    div .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+      margin-top: 0px;
+      font-size: 4em; }
+  .index-contenedor-parrafo {
+    grid-area: escritura; }
+    .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1.2em; } }
+
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
+  transition: 1s; }
+
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:hover {
+  box-shadow: 20px 20px 60px #bbbbbb;
+  transition: 1s; }
+
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+  color: #000000;
+  text-decoration: underline black solid 3px; }
+
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre-line;
+  /*saltos de linea en el texto*/
+  color: black; }
+
+/*-------------- FOOTER ------------------*/
+/*FOOTER AL FONDO*/
+footer p {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+  padding: 1px;
+  color: #868686; }
+
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
+  transition: 1s; }
+
+body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:hover {
+  box-shadow: 20px 20px 60px #bbbbbb;
+  transition: 1s; }
+
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+  color: #000000;
+  text-decoration: underline black solid 3px; }
+
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre-line;
+  /*saltos de linea en el texto*/
+  color: black; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+  html body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /*para que el contenido ocupe el 100% del alto*/
+    min-height: 100vh; }
