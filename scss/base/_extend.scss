@@ -22,4 +22,15 @@
     font-family: $parrafo-principal;      
     white-space: pre-line; /*saltos de linea en el texto*/   
     color: $color-parrafo-primaria; 
+    font-size: 0.8em;
+    color: $color-parrafo-primaria;
+
+        @media screen and (min-width: 600px) {
+                font-size: 1em;                
+
+                @media screen and (min-width: 1000px) {
+                    font-size: 1.2em;
+                    
+                }
+        }    
 }

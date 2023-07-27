@@ -10,9 +10,14 @@
 /*FOOTER AL FONDO*/
 
 footer p{    
-    display: flex;
-    justify-content: center;    
-    margin-top: 1px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     padding: 1px;   
     color: $color-footer-primario; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
 }

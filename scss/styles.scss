@@ -33,3 +33,13 @@ html{
         }
 }
 
+.body-index{
+    background-color: $color-fondo-index;
+}
+
+.body-contacto{
+    background-image: url(../scss/assets/contacto.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+

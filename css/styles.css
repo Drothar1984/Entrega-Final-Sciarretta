@@ -15,7 +15,15 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
   /*saltos de linea en el texto*/
+  color: black;
+  font-size: 0.8em;
   color: black; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1em; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1.2em; } }
 
 /*HEADER - NAVEGADOR*/
 body header nav {
@@ -73,7 +81,15 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
   /*saltos de linea en el texto*/
+  color: black;
+  font-size: 0.8em;
   color: black; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1em; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1.2em; } }
 
 /*-------------------------MAIN----------------------------------------*/
 /*---------------------- pagina principal ------------------------------*/
@@ -107,9 +123,8 @@ main {
         font-size: 2rem; }
     main .index-main-contenedor .index-contenedor-parrafo {
       grid-area: escritura;
+      width: 100%;
       /*estilos al parrafo*/ }
-      main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
-        font-size: 0.8em; }
     main .index-main-contenedor .index-contenedor-boton {
       grid-area: boton;
       display: flex;
@@ -144,6 +159,67 @@ main {
         /*por el tamaño de la pantalla celular ocultamos la imagen*/
         display: none; }
 
+/*--------------------------------CIERRE - INDEX -----------------------------------*/
+/*---------------------------CONTACTO---------------------------------*/
+body main section .h2-contacto {
+  color: #dddddd; }
+
+body main .contacto-main {
+  display: grid;
+  grid-template-areas: "titulo" "elementos" "descripcion" "boton";
+  justify-content: center;
+  align-items: center; }
+  body main .contacto-main div .contenedor-titulo-h3c {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    color: #dddddd;
+    text-decoration: underline 3px solid #dddddd; }
+  body main .contacto-main .contacto-contenedor-elementos {
+    grid-area: elementos; }
+    body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario {
+      display: flex;
+      flex-direction: column;
+      background-color: gray;
+      grid-template-areas: formulario;
+      /*estilos sobre el contenedor del boton*/ }
+      body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario div .contacto-contenedor-elementos-formulario-informacion-linea {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        color: #dddddd; }
+        body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario div .contacto-contenedor-elementos-formulario-informacion-linea label {
+          display: inline-block;
+          width: 100px; }
+      body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-texto {
+        grid-area: descripcion; }
+      body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton {
+        display: flex;
+        justify-content: center;
+        grid-area: boton;
+        /*estilos del boton*/ }
+        body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo {
+          background-color: #dddddd;
+          border: 5px solid #000000;
+          height: 50px;
+          width: 150px;
+          margin-top: 1px;
+          text-align: center;
+          border-radius: 10%;
+          transition: 2s; }
+          body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover {
+            background-color: #6b6b6b;
+            border: 5px solid #484848;
+            box-shadow: 20px 20px 60px #343434;
+            background-color: white;
+            transition: 2s;
+            border-radius: 100%; }
+            body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover a {
+              color: #dddddd; }
+              body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover a:hover {
+                color: #2e2e2e; }
+
+/*--------------------------------CIERRE - CONTACTO -----------------------------------*/
 @media screen and (min-width: 600px) {
   body main {
     height: 80vh; }
@@ -164,9 +240,8 @@ main {
         body main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
           font-size: 3em; }
       body main .index-main-contenedor .index-contenedor-parrafo {
-        grid-area: escritura; }
-        body main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
-          font-size: 1.2em; }
+        grid-area: escritura;
+        width: 100%; }
       body main .index-main-contenedor .index-contenedor-boton {
         grid-area: boton; }
       body main .index-main-contenedor .index-contenedor-imagen {
@@ -178,7 +253,11 @@ main {
         body main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img {
           display: block;
           max-width: 70%;
-          height: auto; } }
+          height: auto; }
+  main section .h2-contacto {
+    display: none; }
+  div div .contenedor-titulo-h3c {
+    font-size: 3em; } }
 
 @media screen and (min-width: 1000px) {
   body main section .index-main-titulo {
@@ -189,10 +268,9 @@ main {
     div .index-contenedor-titulo .index-contenedor-titutlo-h3 {
       margin-top: 0px;
       font-size: 4em; }
-  .index-contenedor-parrafo {
-    grid-area: escritura; }
-    .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
-      font-size: 1.2em; } }
+  .nosotros-contenedor-imagenes {
+    margin-top: 0px;
+    font-size: 4em; } }
 
 body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
   transition: 1s; }
@@ -210,16 +288,29 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
   /*saltos de linea en el texto*/
+  color: black;
+  font-size: 0.8em;
   color: black; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1em; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1.2em; } }
 
 /*-------------- FOOTER ------------------*/
 /*FOOTER AL FONDO*/
 footer p {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1px;
+  color: #868686;
   display: flex;
   justify-content: center;
-  margin-top: 1px;
-  padding: 1px;
-  color: #868686; }
+  align-items: center;
+  height: 50px;
+  margin-top: 20px; }
 
 body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
   transition: 1s; }
@@ -237,7 +328,15 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
   /*saltos de linea en el texto*/
+  color: black;
+  font-size: 0.8em;
   color: black; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1em; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+      font-size: 1.2em; } }
 
 * {
   padding: 0;
@@ -253,3 +352,11 @@ html {
     flex-direction: column;
     /*para que el contenido ocupe el 100% del alto*/
     min-height: 100vh; }
+
+.body-index {
+  background-color: #F7F6FB; }
+
+.body-contacto {
+  background-image: url(../scss/assets/contacto.jpg);
+  background-size: cover;
+  height: 100vh; }

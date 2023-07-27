@@ -11,6 +11,7 @@
 /*---------------------- pagina principal ------------------------------*/
 
 main{
+    
     //para que ocupe el 80% de lo disponible
     height: 80vh;
     //hace que el contenido principal ocupe todo el espacio disponible en el eje vertical
@@ -25,7 +26,6 @@ main{
                    
         }
     /*estilos al contenedor div contenedor*/
-
         .index-main-contenedor{
             max-height: 90vh;    
             display: grid;
@@ -53,10 +53,11 @@ main{
                 /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
                 .index-contenedor-parrafo{
                     grid-area: escritura; 
+                    width: 100%;
                 
                         /*estilos al parrafo*/
                         .index-contenedor-parrafo-escrito{                            
-                            font-size: 0.8em;  
+                            //font-size: 0.8em;  
                             @extend %estilos;
                         }
                 }
@@ -107,7 +108,109 @@ main{
         }
 }
 
+/*--------------------------------CIERRE - INDEX -----------------------------------*/
+
+
     
+/*---------------------------CONTACTO---------------------------------*/
+
+
+body main section .h2-contacto{
+    color: $color-principal-primario;
+}
+
+body main .contacto-main{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "elementos"
+    "descripcion"
+    "boton";
+    
+    justify-content: center;
+    align-items: center;
+
+        div .contenedor-titulo-h3c{
+            grid-area: titulo;
+            display: flex;
+            justify-content: center;
+            color: $color-principal-primario;
+            text-decoration: underline 3px solid $color-principal-primario;
+        }
+
+        .contacto-contenedor-elementos{    
+            grid-area: elementos;
+        
+                .contacto-contenedor-elementos-formulario{
+                    display: flex;
+                    flex-direction: column;   
+                    background-color: gray;
+                    grid-template-areas: formulario;
+                     
+                    
+                        div .contacto-contenedor-elementos-formulario-informacion-linea{
+                            margin: 10px;
+                            display: flex;
+                            align-items: center;
+                            color: $color-principal-primario;
+                        
+                                label{
+                                    display: inline-block;
+                                    width: 100px;
+                                
+                                }                
+                        
+                        }
+                    
+                        .contacto-contenedor-elementos-formulario-texto{
+                            grid-area: descripcion;
+                        }
+        
+                        /*estilos sobre el contenedor del boton*/
+        
+                        .contacto-contenedor-elementos-formulario-boton{
+                            display: flex;
+                            justify-content: center;
+                            grid-area: boton;
+        
+                                /*estilos del boton*/
+        
+                                .contacto-contenedor-elementos-formulario-boton-estilo{
+                                    background-color: $color-principal-primario;
+                                    border: 5px solid $color-principal-secundario;
+                                    height: 50px;
+                                    width: 150px;
+                                    margin-top: 1px;
+                                    text-align: center;                                       
+                                    @include boton-animado;
+                                        &:hover{
+                                            background-color: $color-principal-primario-hover;
+                                            border: 5px solid $color-principal-secundario-hover;
+                                            @include boton-animado-hover;
+                                                a{
+                                                    color: $color-principal-primario;
+                                                        &:hover{
+                                                            color: rgb(46, 46, 46);
+                                                        }
+                                                }                                
+                                        }                            
+                                 }        
+                        }
+                }
+        }
+}
+
+/*--------------------------------CIERRE - CONTACTO -----------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -116,6 +219,8 @@ main{
 
 @media screen and (min-width: 600px) {
     
+
+        //-----------------------INDEX-------------------------
         //titulo secundario
         body main{
             height: 80vh;
@@ -147,10 +252,11 @@ main{
                         }
                 
                         .index-contenedor-parrafo{
-                            grid-area: escritura; 
+                            grid-area: escritura;
+                            width: 100%;
                         
                                 .index-contenedor-parrafo-escrito{                        
-                                    font-size: 1.2em;
+                                    //font-size: 1em;                                    
                                 }
                         }
                 
@@ -174,15 +280,30 @@ main{
                         }
                 }
         }    
+
+        //-----------------------CONTACTO-------------------------
+
+        main section .h2-contacto{
+            display: none;
+        }
+    
+        div div .contenedor-titulo-h3c{
+            font-size: 3em;
+        }
+    
 }
+
+        
 
 
 
 //estilos al cambio de tamaño a pc
 
-@media screen and (min-width: 1000px) {
-   
+@media screen and (min-width: 1000px) {   
     
+
+        //-----------------------INDEX-------------------------
+
         //titulo secundario
         body main section .index-main-titulo{
             display: none;
@@ -198,15 +319,16 @@ main{
                     font-size: 4em;                        
                 }
         }
+
+        //-----------------------CONTACTO-------------------------
         
-        .index-contenedor-parrafo{
-            grid-area: escritura; 
-                
-                .index-contenedor-parrafo-escrito{                                                
-                    font-size: 1.2em;
-                }
+        .nosotros-contenedor-imagenes{
+            margin-top: 0px;
+            font-size: 4em;                        
+        
         }
 }
     
+       
         
 
