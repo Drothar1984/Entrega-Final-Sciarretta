@@ -46,6 +46,22 @@
           
 }
 
+
+//TITULO - H3
+@mixin titulo-h3{
+        font-size: 2rem;        
+
+        @media screen and (min-width: 600px) {
+                font-size: 3rem;               
+                
+
+                @media screen and (min-width: 1000px) {
+                        font-size: 5rem;                        
+                }
+        }    
+}
+
+
 //botones
 
 @mixin boton-animado{                                          
@@ -58,4 +74,12 @@
         background-color: rgb(255, 255, 255); 
         transition: 2s;
         border-radius: 100%;
+}
+
+//flex - centrado
+
+@mixin flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }

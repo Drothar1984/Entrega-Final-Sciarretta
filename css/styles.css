@@ -129,6 +129,7 @@ main {
       grid-area: boton;
       display: flex;
       justify-content: center;
+      align-items: center;
       /*estilos al boton*/ }
       main .index-main-contenedor .index-contenedor-boton button {
         background-color: #dddddd;
@@ -161,8 +162,14 @@ main {
 
 /*--------------------------------CIERRE - INDEX -----------------------------------*/
 /*---------------------------CONTACTO---------------------------------*/
-body main section .h2-contacto {
-  color: #dddddd; }
+body main section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  body main section .h2-contacto {
+    color: #dddddd;
+    text-decoration: underline 3px solid #dddddd;
+    font-size: 2.5rem; }
 
 body main .contacto-main {
   display: grid;
@@ -173,8 +180,16 @@ body main .contacto-main {
     grid-area: titulo;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 2rem;
     color: #dddddd;
     text-decoration: underline 3px solid #dddddd; }
+    @media screen and (min-width: 600px) {
+      body main .contacto-main div .contenedor-titulo-h3c {
+        font-size: 3rem; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    body main .contacto-main div .contenedor-titulo-h3c {
+      font-size: 5rem; } }
   body main .contacto-main .contacto-contenedor-elementos {
     grid-area: elementos; }
     body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario {
@@ -186,16 +201,21 @@ body main .contacto-main {
       body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario div .contacto-contenedor-elementos-formulario-informacion-linea {
         margin: 10px;
         display: flex;
+        justify-content: center;
         align-items: center;
         color: #dddddd; }
         body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario div .contacto-contenedor-elementos-formulario-informacion-linea label {
           display: inline-block;
           width: 100px; }
       body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         grid-area: descripcion; }
       body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton {
         display: flex;
         justify-content: center;
+        align-items: center;
         grid-area: boton;
         /*estilos del boton*/ }
         body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo {
@@ -203,7 +223,7 @@ body main .contacto-main {
           border: 5px solid #000000;
           height: 50px;
           width: 150px;
-          margin-top: 1px;
+          margin: 10px;
           text-align: center;
           border-radius: 10%;
           transition: 2s; }
@@ -226,7 +246,9 @@ body main .contacto-main {
     body main section .index-main-titulo {
       margin-top: 1rem;
       font-size: 5rem;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #000000;
       text-decoration: underline black solid 3px; }
     body main .index-main-contenedor {
@@ -254,10 +276,8 @@ body main .contacto-main {
           display: block;
           max-width: 70%;
           height: auto; }
-  main section .h2-contacto {
-    display: none; }
-  div div .contenedor-titulo-h3c {
-    font-size: 3em; } }
+  body main section .h2-contacto {
+    font-size: 4rem; } }
 
 @media screen and (min-width: 1000px) {
   body main section .index-main-titulo {
@@ -268,9 +288,12 @@ body main .contacto-main {
     div .index-contenedor-titulo .index-contenedor-titutlo-h3 {
       margin-top: 0px;
       font-size: 4em; }
-  .nosotros-contenedor-imagenes {
-    margin-top: 0px;
-    font-size: 4em; } }
+  body main section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .h2-contacto {
+    display: none; } }
 
 body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
   transition: 1s; }

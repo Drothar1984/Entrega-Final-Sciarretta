@@ -65,8 +65,8 @@ main{
                 /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
                 .index-contenedor-boton{
                     grid-area: boton;
-                    display: flex;
-                    justify-content: center;
+                    //flex modificado
+                    @include flex;
 
                         /*estilos al boton*/
                         button{
@@ -115,8 +115,15 @@ main{
 /*---------------------------CONTACTO---------------------------------*/
 
 
-body main section .h2-contacto{
-    color: $color-principal-primario;
+body main section{
+    @include flex;
+
+        .h2-contacto{
+            color: $color-principal-primario;
+            text-decoration: underline 3px solid $color-principal-primario;
+            font-size: 2.5rem;           
+        } 
+       
 }
 
 body main .contacto-main{
@@ -132,9 +139,9 @@ body main .contacto-main{
 
         div .contenedor-titulo-h3c{
             grid-area: titulo;
-            display: flex;
-            justify-content: center;
-            color: $color-principal-primario;
+            @include flex;
+            @include titulo-h3;
+            color: $color-principal-primario;            
             text-decoration: underline 3px solid $color-principal-primario;
         }
 
@@ -150,8 +157,7 @@ body main .contacto-main{
                     
                         div .contacto-contenedor-elementos-formulario-informacion-linea{
                             margin: 10px;
-                            display: flex;
-                            align-items: center;
+                            @include flex;
                             color: $color-principal-primario;
                         
                                 label{
@@ -163,14 +169,14 @@ body main .contacto-main{
                         }
                     
                         .contacto-contenedor-elementos-formulario-texto{
+                            @include flex;
                             grid-area: descripcion;
                         }
         
                         /*estilos sobre el contenedor del boton*/
         
                         .contacto-contenedor-elementos-formulario-boton{
-                            display: flex;
-                            justify-content: center;
+                            @include flex;
                             grid-area: boton;
         
                                 /*estilos del boton*/
@@ -180,9 +186,10 @@ body main .contacto-main{
                                     border: 5px solid $color-principal-secundario;
                                     height: 50px;
                                     width: 150px;
-                                    margin-top: 1px;
+                                    margin: 10px;
                                     text-align: center;                                       
                                     @include boton-animado;
+                                    
                                         &:hover{
                                             background-color: $color-principal-primario-hover;
                                             border: 5px solid $color-principal-secundario-hover;
@@ -228,7 +235,7 @@ body main .contacto-main{
                 section .index-main-titulo{
                     margin-top: 1rem;
                     font-size: 5rem;
-                    text-align: center;   
+                    @include flex;   
                     color: $color-principal-secundario;
                     text-decoration: underline black solid 3px;
                 }
@@ -268,9 +275,7 @@ body main .contacto-main{
                         .index-contenedor-imagen{            
                             grid-area: imagen;
                             display: block;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            @include flex;
                                 .index-contenedor-imagen-img{
                                     display: block;
                                     max-width: 70%;
@@ -283,15 +288,14 @@ body main .contacto-main{
 
         //-----------------------CONTACTO-------------------------
 
-        main section .h2-contacto{
-            display: none;
+
+        
+        body main section .h2-contacto{
+                    font-size: 4rem; 
+                    
         }
-    
-        div div .contenedor-titulo-h3c{
-            font-size: 3em;
-        }
-    
 }
+
 
         
 
@@ -322,12 +326,16 @@ body main .contacto-main{
 
         //-----------------------CONTACTO-------------------------
         
-        .nosotros-contenedor-imagenes{
-            margin-top: 0px;
-            font-size: 4em;                        
-        
+        body main section{
+            @include flex;
+
         }
+
+        .h2-contacto{
+                display: none; 
+            }
 }
+
     
        
         
