@@ -47,6 +47,7 @@ main{
                         .index-contenedor-titutlo-h3{
                             font-size: 2rem;                                
                             @extend %titulos;
+                            color: $color-parrafo-primaria; 
                         }
                 }
 
@@ -59,6 +60,7 @@ main{
                         .index-contenedor-parrafo-escrito{                            
                             //font-size: 0.8em;  
                             @extend %estilos;
+                            color: $color-parrafo-primaria; 
                         }
                 }
 
@@ -209,15 +211,78 @@ body main .contacto-main{
 
 /*--------------------------------CIERRE - CONTACTO -----------------------------------*/
 
+/*--------------------------------INICIO - NOSOTROS -----------------------------------*/
+
+body main section .nosotros-titulo{
+    
+    @include flex;   
+    @include titulo-secundario;
+
+}
+
+body main .nosotros-contenedor{
+    display: block;
+    @include flex;
+    flex-direction: column;
+
+        div .nosotros-contenedor-titutlo-h3{
+            @include titulo-h3;
+            
+            
+        }
+}
+
+.nosotros-contenedor-imagenes{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,30%);
+    gap: 2rem;
+    margin: 3rem 2rem 3rem 1rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+        
+        .nosotros-contenedor-imagenes-uno{
+            width: 100%;
+            height: 100%;
+            
+            /* Para centrar la imagen dentro del contenedor */
+            @include flex;
+            perspective: 1000px;
+            
+                p{
+                    @include flex;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+            
+
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+                .nosotros-contenedor-imagenes-uno-texto{
+                    color: $color-principal-primario;
+                    @include texto;
+                    @extend %estilos;                    
+                }
+        }
+}
+
+.nosotros-contenedor-imagenes-uno:hover .nosotros-contenedor-imagenes-uno-texto{
+    opacity: 1;
+
+}
 
 
 
 
 
 
-
-
-
+/*---------------------------------CIERRE - NOSOTROS ------------------------------------*/
 
 
 
@@ -233,11 +298,9 @@ body main .contacto-main{
             height: 80vh;
         
                 section .index-main-titulo{
-                    margin-top: 1rem;
-                    font-size: 5rem;
+                    @include titulo-secundario;
                     @include flex;   
-                    color: $color-principal-secundario;
-                    text-decoration: underline black solid 3px;
+                    
                 }
                 
                 .index-main-contenedor{
@@ -294,6 +357,18 @@ body main .contacto-main{
                     font-size: 4rem; 
                     
         }
+
+        //-------------------------NOSOTROS------------------------
+
+        .nosotros-contenedor-imagenes{
+            display: grid;        
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: repeat( 3, 30%);
+    
+               .nosotros-contenedor-imagenes-uno{
+                grid-column: span 2;
+               }
+        }
 }
 
 
@@ -334,6 +409,30 @@ body main .contacto-main{
         .h2-contacto{
                 display: none; 
             }
+
+        .nosotros-contenedor-imagenes{
+        display: grid;        
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat( 3, 30%);
+
+           .nosotros-contenedor-imagenes-uno{
+            grid-column: span 2;
+           }
+        }
+        //----------------------NOSOTROS---------------------------
+
+        .nosotros-contenedor-imagenes{
+            height: 70vh;
+            display: grid;
+            grid-template-columns: repeat(3,30%);
+            grid-template-rows: 1fr;
+            gap: 2rem;
+            margin: 3rem 2rem 3rem 1rem;
+    
+                .nosotros-contenedor-imagenes-uno{
+                    grid-column: auto;
+                }
+        }
 }
 
     
