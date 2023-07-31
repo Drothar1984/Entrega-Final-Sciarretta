@@ -6,11 +6,17 @@ body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:
   box-shadow: 20px 20px 60px #bbbbbb;
   transition: 1s; }
 
-main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
   color: #000000;
-  text-decoration: underline black solid 3px; }
+  text-decoration: underline solid black 2px; }
+  @media screen and (min-width: 600px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 4px; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -18,11 +24,20 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
+
+main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+  box-shadow: 20px 20px 60px #343434; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
 
 /*HEADER - NAVEGADOR*/
 body header nav {
@@ -71,11 +86,17 @@ body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:
   box-shadow: 20px 20px 60px #bbbbbb;
   transition: 1s; }
 
-main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
   color: #000000;
-  text-decoration: underline black solid 3px; }
+  text-decoration: underline solid black 2px; }
+  @media screen and (min-width: 600px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 4px; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -83,11 +104,20 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
+
+main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+  box-shadow: 20px 20px 60px #343434; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
 
 /*-------------------------MAIN----------------------------------------*/
 /*---------------------- pagina principal ------------------------------*/
@@ -125,8 +155,14 @@ main {
       grid-area: titulo;
       /*estilos directos al titulo de la division*/ }
       main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
-        font-size: 2rem;
-        color: black; }
+        margin-top: 20px;
+        font-size: 2rem; }
+        @media screen and (min-width: 600px) {
+          main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+            font-size: 3rem; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+      font-size: 4rem; } }
     main .index-main-contenedor .index-contenedor-parrafo {
       grid-area: escritura;
       width: 100%;
@@ -232,7 +268,7 @@ body main .contacto-main {
           border: 5px solid #000000;
           height: 50px;
           width: 150px;
-          margin: 10px;
+          margin-top: 1px;
           text-align: center;
           border-radius: 10%;
           transition: 2s; }
@@ -274,7 +310,10 @@ body main .nosotros-contenedor {
   flex-direction: column; }
   body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3 {
     margin-top: 20px;
-    font-size: 2rem; }
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     @media screen and (min-width: 600px) {
       body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3 {
         font-size: 3rem; } }
@@ -341,6 +380,7 @@ body main .nosotros-contenedor {
   opacity: 1; }
 
 /*---------------------------------CIERRE - NOSOTROS ------------------------------------*/
+/*---------------------------------  TABLET   ------------------------------------*/
 @media screen and (min-width: 600px) {
   body main {
     height: 80vh; }
@@ -367,13 +407,12 @@ body main .nosotros-contenedor {
       justify-content: center;
       align-items: center; }
       body main .index-main-contenedor .index-contenedor-titulo {
-        text-align: center;
         grid-area: titulo; }
-        body main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
-          font-size: 3em; }
       body main .index-main-contenedor .index-contenedor-parrafo {
         grid-area: escritura;
         width: 100%; }
+        body main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito {
+          margin-left: 50px; }
       body main .index-main-contenedor .index-contenedor-boton {
         grid-area: boton; }
       body main .index-main-contenedor .index-contenedor-imagen {
@@ -395,6 +434,7 @@ body main .nosotros-contenedor {
     .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno {
       grid-column: span 2; } }
 
+/*--------------------------------- PC ------------------------------------*/
 @media screen and (min-width: 1000px) {
   body main section .index-main-titulo {
     display: none; }
@@ -402,8 +442,7 @@ body main .nosotros-contenedor {
     margin-top: 0px;
     grid-area: titulo; }
     div .index-contenedor-titulo .index-contenedor-titutlo-h3 {
-      margin-top: 0px;
-      font-size: 4em; }
+      margin-top: 0px; }
   body main section {
     display: flex;
     justify-content: center;
@@ -426,6 +465,147 @@ body main .nosotros-contenedor {
     .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno {
       grid-column: auto; } }
 
+/*---------------------- P COMPROMISO - PHISING ------------------------------*/
+main {
+  height: 80vh;
+  flex: 1;
+  padding: 1px;
+  /*estilos al contenedor div contenedor*/ }
+  main section .general-main-titulo {
+    margin-top: 1rem;
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline black solid 3px; }
+    @media screen and (min-width: 600px) {
+      main section .general-main-titulo {
+        font-size: 4rem; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main section .general-main-titulo {
+      display: none; } }
+  main .general-main-contenedor {
+    max-height: 90vh;
+    display: grid;
+    grid-template-areas: "titulo" "escritura" "boton";
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    margin: 1%;
+    /*estilos al contenedor del titulo de la division*/
+    /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
+    /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
+    /*estilos al contenedor de la imagen -- simplemente se le determino el area del grid*/ }
+    main .general-main-contenedor .general-contenedor-titulo {
+      text-align: center;
+      grid-area: titulo;
+      /*estilos directos al titulo de la division*/ }
+      main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+        margin-top: 20px;
+        font-size: 2rem;
+        margin-bottom: 20px; }
+        @media screen and (min-width: 600px) {
+          main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+            font-size: 3rem; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      font-size: 4rem; } }
+    main .general-main-contenedor .general-contenedor-parrafo {
+      grid-area: escritura;
+      width: 100%;
+      /*estilos al parrafo*/ }
+      main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
+        color: black; }
+    main .general-main-contenedor .general-contenedor-boton {
+      grid-area: boton;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*estilos al boton*/ }
+      main .general-main-contenedor .general-contenedor-boton button {
+        background-color: #9b9b9b;
+        border: 5px solid #552e2e;
+        height: 50px;
+        width: 150px;
+        margin-top: 1px;
+        text-align: center;
+        border-radius: 10%;
+        transition: 2s; }
+        main .general-main-contenedor .general-contenedor-boton button:hover {
+          background-color: #6b6b6b;
+          border: 5px solid #484848;
+          box-shadow: 20px 20px 60px #343434;
+          background-color: white;
+          transition: 2s;
+          border-radius: 100%; }
+          main .general-main-contenedor .general-contenedor-boton button:hover a {
+            color: #dddddd; }
+            main .general-main-contenedor .general-contenedor-boton button:hover a:hover {
+              color: #000000; }
+        main .general-main-contenedor .general-contenedor-boton button a {
+          color: #000000; }
+    main .general-main-contenedor .general-contenedor-imagen {
+      grid-area: imagen;
+      /*estilos a la imagen*/ }
+      main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+        /*por el tamaño de la pantalla celular ocultamos la imagen*/
+        display: none; }
+
+@media screen and (min-width: 600px) {
+  body main {
+    height: 80vh; }
+    body main section .general-main-titulo {
+      margin-top: 1rem;
+      color: black;
+      font-size: 2.5rem;
+      text-align: center;
+      text-decoration: underline black solid 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+    @media screen and (min-width: 600px) and (min-width: 600px) {
+      body main section .general-main-titulo {
+        font-size: 4rem; } }
+  @media screen and (min-width: 600px) and (min-width: 600px) and (min-width: 1000px) {
+    body main section .general-main-titulo {
+      display: none; } }
+
+@media screen and (min-width: 600px) {
+    body main .general-main-contenedor {
+      display: grid;
+      grid-template-areas: "titulo     titulo" "imagen     escritura"             "imagen     boton";
+      justify-content: center;
+      align-items: center; }
+      body main .general-main-contenedor .general-contenedor-titulo {
+        grid-area: titulo; }
+      body main .general-main-contenedor .general-contenedor-parrafo {
+        grid-area: escritura;
+        width: 100%; }
+        body main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
+          margin-right: 50px; }
+      body main .general-main-contenedor .general-contenedor-boton {
+        grid-area: boton; }
+      body main .general-main-contenedor .general-contenedor-imagen {
+        grid-area: imagen;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+          display: block;
+          max-width: 80%;
+          height: auto; } }
+
+@media screen and (min-width: 1000px) {
+  body main section .general-main-titulo {
+    display: none; }
+  div .general-contenedor-titulo {
+    margin-top: 0px;
+    grid-area: titulo; }
+    div .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      margin-top: 0px;
+      margin-bottom: 40px;
+      font-size: 4em; } }
+
 body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul {
   transition: 1s; }
 
@@ -433,11 +613,17 @@ body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:
   box-shadow: 20px 20px 60px #bbbbbb;
   transition: 1s; }
 
-main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
   color: #000000;
-  text-decoration: underline black solid 3px; }
+  text-decoration: underline solid black 2px; }
+  @media screen and (min-width: 600px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 4px; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -445,11 +631,20 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
+
+main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+  box-shadow: 20px 20px 60px #343434; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
 
 /*-------------- FOOTER ------------------*/
 /*FOOTER AL FONDO*/
@@ -472,11 +667,17 @@ body header nav .index-menu-contenedor .index-menu-contenedor-boton div ul li a:
   box-shadow: 20px 20px 60px #bbbbbb;
   transition: 1s; }
 
-main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3 {
+main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
   color: #000000;
-  text-decoration: underline black solid 3px; }
+  text-decoration: underline solid black 2px; }
+  @media screen and (min-width: 600px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 4px; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
+      text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -484,11 +685,20 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
+
+main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+  box-shadow: 20px 20px 60px #343434; }
+  @media screen and (min-width: 600px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
+  @media screen and (min-width: 600px) and (min-width: 1000px) {
+    main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
+      box-shadow: 20px 20px 60px #343434; } }
 
 * {
   padding: 0;
