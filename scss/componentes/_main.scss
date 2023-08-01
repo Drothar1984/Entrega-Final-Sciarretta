@@ -18,6 +18,7 @@ main{
     flex: 1;
     //distancia entre los elementos
     padding: 1px;
+    
 
         //estilos del titulo secundario
         section .index-main-titulo{
@@ -130,8 +131,7 @@ body main .contacto-main{
     "titulo"
     "elementos"
     "descripcion"
-    "boton";
-    
+    "boton";    
     justify-content: center;
     align-items: center;
 
@@ -205,8 +205,7 @@ body main .contacto-main{
 
 /*--------------------------------INICIO - NOSOTROS -----------------------------------*/
 
-body main section .nosotros-titulo{
-    
+body main section .nosotros-titulo{    
     @include flex;   
     @include titulo-secundario;
 
@@ -276,159 +275,6 @@ body main .nosotros-contenedor{
 
 
 
-
-/*---------------------------------  TABLET   ------------------------------------*/
-
-
-
-//estilos al cambio de tamaño a tablet
-
-@media screen and (min-width: 600px) {
-    
-
-        //-----------------------INDEX-------------------------
-        //titulo secundario
-        body main{
-            height: 80vh;
-        
-                section .index-main-titulo{
-                    @include titulo-secundario;
-                    @include flex;   
-                    
-                }
-                
-                .index-main-contenedor{
-                    display: grid;
-                    grid-template-areas: 
-                    "titulo     titulo"
-                    "escritura  imagen"            
-                    "boton      imagen";
-                    justify-content: center;
-                    align-items: center;           
-                
-                        .index-contenedor-titulo{                            
-                            grid-area: titulo;
-                                                
-                        }
-                
-                        .index-contenedor-parrafo{
-                            grid-area: escritura;
-                            width: 100%;
-                        
-                                .index-contenedor-parrafo-escrito{                        
-                                    margin-left: 50px;                                    
-                                }
-                        }
-                
-                        .index-contenedor-boton{
-                            grid-area: boton;
-                                
-                        }
-                
-                        .index-contenedor-imagen{            
-                            grid-area: imagen;
-                            display: block;
-                            @include flex;
-                            
-                            
-
-                                .index-contenedor-imagen-img{
-                                    display: block;
-                                    max-width: 70%;
-                                    height: auto;
-                                    
-                                }
-                        }
-                }
-        }    
-
-        //-----------------------CONTACTO-------------------------
-
-
-        
-        body main section .h2-contacto{
-                    font-size: 4rem; 
-                    
-        }
-
-        //-------------------------NOSOTROS------------------------
-
-        .nosotros-contenedor-imagenes{
-            display: grid;        
-            grid-template-columns: 1fr 1fr ;
-            grid-template-rows: repeat( 3, 30%);
-    
-               .nosotros-contenedor-imagenes-uno{
-                grid-column: span 2;
-               }
-        }
-}
-
-
-        
-/*--------------------------------- PC ------------------------------------*/
-
-
-
-
-@media screen and (min-width: 1000px) {   
-    
-
-        //-----------------------INDEX-------------------------
-
-        //titulo secundario
-        body main section .index-main-titulo{
-            display: none;
-            
-        }
-
-        div .index-contenedor-titulo{
-            margin-top: 0px;
-            grid-area: titulo;
-
-                .index-contenedor-titutlo-h3{
-                    margin-top: 0px;                                           
-                }
-        }
-
-        //-----------------------CONTACTO-------------------------
-        
-        body main section{
-            @include flex;
-
-        }
-
-        .h2-contacto{
-                display: none; 
-            }
-
-        .nosotros-contenedor-imagenes{
-        display: grid;        
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: repeat( 3, 30%);
-
-           .nosotros-contenedor-imagenes-uno{
-            grid-column: span 2;
-           }
-        }
-        //----------------------NOSOTROS---------------------------
-
-        .nosotros-contenedor-imagenes{
-            height: 70vh;
-            display: grid;
-            grid-template-columns: repeat(3,30%);
-            grid-template-rows: 1fr;
-            gap: 2rem;
-            margin: 3rem 2rem 3rem 1rem;
-    
-                .nosotros-contenedor-imagenes-uno{
-                    grid-column: auto;
-                }
-        }
-}
-
-    
-       
         
 
 /*---------------------- P COMPROMISO - PHISING ------------------------------*/
@@ -449,7 +295,7 @@ main{
                    
         }
     /*estilos al contenedor div contenedor*/
-        .general-main-contenedor{
+        .general-main-contenedor{                
             max-height: 90vh;    
             display: grid;
             grid-template-areas: 
@@ -531,11 +377,137 @@ main{
 }
 
 
+    
+/*-----------------------CIERRE P COMPROMISO - PHISING-----------------------------------*/
+
+
+
+
+//---------------------------- SKIMMING - SUSTRACCION ---------------------------
+
+
+
+
+.gradient-container {
+    height: 100vh; /* 100% del alto de la ventana */
+    background: linear-gradient(to bottom, black, rgb(238, 237, 237));
+}
+
+
+.boton-A{
+    width: 100%;
+    height: 100%;
+    
+
+    /* Para centrar la imagen dentro del contenedor */
+    @include flex;
+    perspective: 1000px;
+    
+        .P-A{
+            @include flex;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+       
+        .nosotros-contenedor-imagenes-uno-texto{
+            color: $color-principal-primario;
+            @include texto;
+            @extend %estilos;                    
+        }
+}
+
+
+
+/*----------------------- CIERRE PHISING - IDENTIDAD -----------------------------------*/
+
+
+
+/*---------------------------------  TABLET   ------------------------------------*/
+
+
+
+//estilos al cambio de tamaño a tablet
 
 @media screen and (min-width: 600px) {
     
 
-    //----------------------- P COMPROMISO - PHISING -------------------------
+        //-----------------------INDEX-------------------------
+        //titulo secundario
+        body main{
+            height: 80vh;
+        
+                section .index-main-titulo{
+                    @include titulo-secundario;
+                    @include flex;
+                }
+                
+                .index-main-contenedor{
+                    display: grid;
+                    grid-template-areas: 
+                    "titulo     titulo"
+                    "escritura  imagen"            
+                    "boton      imagen";
+                    justify-content: center;
+                    align-items: center;           
+                
+                        .index-contenedor-titulo{                            
+                            grid-area: titulo;                                                
+                        }
+                
+                        .index-contenedor-parrafo{
+                            grid-area: escritura;
+                            width: 100%;
+                        
+                                .index-contenedor-parrafo-escrito{                        
+                                    margin-left: 50px;                                    
+                                }
+                        }
+                
+                        .index-contenedor-boton{
+                            grid-area: boton;                                
+                        }
+                
+                        .index-contenedor-imagen{            
+                            grid-area: imagen;
+                            display: block;
+                            @include flex;
+
+                                .index-contenedor-imagen-img{
+                                    display: block;
+                                    max-width: 70%;
+                                    height: auto;
+                                    
+                                }
+                        }
+                }
+        }    
+
+        //-----------------------CONTACTO-------------------------
+
+
+        
+        body main section .h2-contacto{
+                    font-size: 4rem; 
+        }
+
+        body main div .contacto-contenedor-elementos{
+            margin-top: 50px;
+        }
+
+        //-------------------------NOSOTROS------------------------
+
+        .nosotros-contenedor-imagenes{
+            display: grid;        
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: repeat( 3, 30%);
+    
+               .nosotros-contenedor-imagenes-uno{
+                grid-column: span 2;
+               }
+        }
+
+            //----------------------- P COMPROMISO - PHISING -------------------------
     //titulo secundario
     body main{
         height: 80vh;
@@ -543,7 +515,6 @@ main{
             section .general-main-titulo{
                 @include titulo-secundario;
                 @include flex;   
-                
             }
             
             .general-main-contenedor{
@@ -556,10 +527,8 @@ main{
                 align-items: center;           
             
                     .general-contenedor-titulo{                        
-                        grid-area: titulo;                        
-                    
+                        grid-area: titulo;    
                     }           
-                            
             
                     .general-contenedor-parrafo{
                         grid-area: escritura;
@@ -573,7 +542,6 @@ main{
             
                     .general-contenedor-boton{
                         grid-area: boton;
-                            
                     }
             
                     .general-contenedor-imagen{            
@@ -589,28 +557,92 @@ main{
                     }
             }
     }  
-
 }
+
+
+
+        
+/*--------------------------------- PC ------------------------------------*/
+
+
+
 
 @media screen and (min-width: 1000px) {   
     
 
-    //----------------------- P COMPROMISO - PHISING -------------------------
+        //-----------------------INDEX-------------------------
 
-    //titulo secundario
-    body main section .general-main-titulo{
-        display: none;
+        //titulo secundario
+        body main section .index-main-titulo{
+            display: none;
+        }
+
+        div .index-contenedor-titulo{
+            margin-top: 0px;
+            grid-area: titulo;
+
+                .index-contenedor-titutlo-h3{
+                    margin-top: 0px;                                           
+                }
+        }
+
+        //-----------------------CONTACTO-------------------------
         
-    }
+        body main section{
+            @include flex;
+        }
 
-    div .general-contenedor-titulo{
-        margin-top: 0px;
-        grid-area: titulo;
-
-            .general-contenedor-titutlo-h3{
-                margin-top: 0px;
-                margin-bottom: 40px;
-                font-size: 4em;                        
+        .h2-contacto{
+                display: none; 
             }
+
+        .nosotros-contenedor-imagenes{
+        display: grid;        
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat( 3, 30%);
+
+           .nosotros-contenedor-imagenes-uno{
+            grid-column: span 2;
+           }
+        }
+        //----------------------NOSOTROS---------------------------
+
+        .nosotros-contenedor-imagenes{
+            height: 70vh;
+            display: grid;
+            grid-template-columns: repeat(3,30%);
+            grid-template-rows: 1fr;
+            gap: 2rem;
+            margin: 3rem 2rem 3rem 1rem;
+    
+                .nosotros-contenedor-imagenes-uno{
+                    grid-column: auto;
+                }
+        }
+
+            //----------------------- P COMPROMISO - PHISING -------------------------
+
+        //titulo secundario
+        body main section .general-main-titulo{
+            display: none;
+        }
+
+        div .general-contenedor-titulo{
+            margin-top: 0px;
+            grid-area: titulo;
+
+                .general-contenedor-titutlo-h3{
+                    margin-top: 0px;
+                    margin-bottom: 40px;
+                    font-size: 4em;                        
+                }
+        }
     }
-}
+
+
+
+    
+       
+
+
+        

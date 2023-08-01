@@ -4,7 +4,7 @@
 
 @mixin barra-nav{
 
-        background-color: $color-nav-principal;
+        background-color: $color-nav-principal;        
         /*para que se mueva al scrolear*/
         position: sticky;   
         top: 0; 
@@ -58,6 +58,7 @@
 
 
 //TITULO - H3
+
 @mixin titulo-h3{
         margin-top: 20px;
         font-size: 2rem;        
