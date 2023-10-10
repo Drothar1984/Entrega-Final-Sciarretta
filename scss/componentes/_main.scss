@@ -383,46 +383,6 @@ main{
 
 
 
-//---------------------------- SKIMMING - SUSTRACCION ---------------------------
-
-
-
-
-.gradient-container {
-    height: 100vh; /* 100% del alto de la ventana */
-    background: linear-gradient(to bottom, black, rgb(238, 237, 237));
-}
-
-
-.boton-A{
-    width: 100%;
-    height: 100%;
-    
-
-    /* Para centrar la imagen dentro del contenedor */
-    @include flex;
-    perspective: 1000px;
-    
-        .P-A{
-            @include flex;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-       
-        .nosotros-contenedor-imagenes-uno-texto{
-            color: $color-principal-primario;
-            @include texto;
-            @extend %estilos;                    
-        }
-}
-
-
-
-/*----------------------- CIERRE PHISING - IDENTIDAD -----------------------------------*/
-
-
-
 /*---------------------------------  TABLET   ------------------------------------*/
 
 

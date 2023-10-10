@@ -16,7 +16,7 @@ main section .index-main-titulo, main .index-main-contenedor .index-contenedor-t
     main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
       text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -24,10 +24,10 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
 
 main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
@@ -96,7 +96,7 @@ main section .index-main-titulo, main .index-main-contenedor .index-contenedor-t
     main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
       text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -104,10 +104,10 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
 
 main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
@@ -466,53 +466,6 @@ main {
         display: none; }
 
 /*-----------------------CIERRE P COMPROMISO - PHISING-----------------------------------*/
-.gradient-container {
-  height: 100vh;
-  /* 100% del alto de la ventana */
-  background: linear-gradient(to bottom, black, #eeeded); }
-
-.boton-A {
-  width: 100%;
-  height: 100%;
-  /* Para centrar la imagen dentro del contenedor */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px; }
-  .boton-A .P-A {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    margin-bottom: 10px; }
-  .boton-A .nosotros-contenedor-imagenes-uno-texto {
-    color: #dddddd;
-    text-align: center;
-    position: absolute;
-    font-size: 0.5rem;
-    min-width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 1s;
-    background-color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 6px;
-    box-shadow: 0px 15px 25px #6e6e6e; }
-    @media screen and (min-width: 600px) {
-      .boton-A .nosotros-contenedor-imagenes-uno-texto {
-        font-size: 0.7rem; } }
-  @media screen and (min-width: 600px) and (min-width: 1000px) {
-    .boton-A .nosotros-contenedor-imagenes-uno-texto {
-      font-size: 1.5rem; } }
-
-/*----------------------- CIERRE PHISING - IDENTIDAD -----------------------------------*/
 /*---------------------------------  TABLET   ------------------------------------*/
 @media screen and (min-width: 600px) {
   body main {
@@ -669,7 +622,7 @@ main section .index-main-titulo, main .index-main-contenedor .index-contenedor-t
     main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
       text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -677,10 +630,10 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
 
 main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {
@@ -723,7 +676,7 @@ main section .index-main-titulo, main .index-main-contenedor .index-contenedor-t
     main section .index-main-titulo, main .index-main-contenedor .index-contenedor-titulo .index-contenedor-titutlo-h3, body main .nosotros-contenedor div .nosotros-contenedor-titutlo-h3, main section .general-main-titulo, main .general-main-contenedor .general-contenedor-titulo .general-contenedor-titutlo-h3 {
       text-decoration: underline solid black 5px; } }
 
-main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-line;
@@ -731,10 +684,10 @@ main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-
   font-size: 0.8em;
   color: black; }
   @media screen and (min-width: 600px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1em; } }
   @media screen and (min-width: 600px) and (min-width: 1000px) {
-    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito, .boton-A .nosotros-contenedor-imagenes-uno-texto {
+    main .index-main-contenedor .index-contenedor-parrafo .index-contenedor-parrafo-escrito, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto, main .general-main-contenedor .general-contenedor-parrafo .general-contenedor-parrafo-escrito {
       font-size: 1.2em; } }
 
 main .index-main-contenedor .index-contenedor-imagen .index-contenedor-imagen-img, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno img, main .general-main-contenedor .general-contenedor-imagen .general-contenedor-imagen-img {

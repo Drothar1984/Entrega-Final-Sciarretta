@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--descripcion-->
+    <meta name= "descripcion" content="pagina de contacto de la Division Fraudes Bancarios de la Policia de la Ciudad, especializada en delitos bancarios, skimming, phising, punto de compromiso, etc.">
+    <!--keywords-->
+    <meta name="keywords" content="POLICIA, CIUDAD, DIVISION, FRAUDES, BANCARIOS, ESTAFAS, ROBO DE IDENTIDAD, SKIMMING, PHISING, PUNTO DE COMPROMISO">
+    <!--Titulo Pagina-->
+    <title>Entidades Bancarias - Policia de la Ciudad - Division Fraudes Bancarios - Delitos Bancarios</title>
+    <!--icono en la barra browser-->
+    <link rel="icon" type="image/png" href="../scss/assets/logo-png.png" alt="escudo de la policia de la ciudad version oscura">
+    <!--link boobstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-secundario.css">
+</head>
+<body class="body-entidades">
+     
+    <!--inicio header-->
+    <header>
+        <!--contenedor general del nav-->
+        <nav class="index-menu">
+            
+            <div class="index-menu-contenedor">
+                <!-- imagente logo nav izquierdo -->
+                <img src="../scss/assets/policia de la ciudad.png" alt="logo de la policia de la ciudad" class="index-menu-contenedor-img">            
+                <!-- boton del menu nav-->
+                <ul class="index-menu-contenedor-boton">
+                    <!-- menu hamburguesa de bootstrap-->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu de la División
+                        </a>
+                        <!--paginas del menu-->
+                        <ul class="dropdown-menu" style="position: relative;">
+                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="identidad.html">Sustraccion de Identidiad</a></li>
+                            <li><a class="dropdown-item" href="phising.html">Phising</a></li>
+                            <li><a class="dropdown-item" href="skimming.html">Skimming</a></li>
+                            <li><a class="dropdown-item" href="compromiso.html">Punto de Compromiso</a></li>                            
+                            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>    
+                                 
+                        </ul>                                           
+                </ul>
+            </div>
+            <!-- titulo principal -->
+            <h1 class="index-menu-titulo">
+                    Policia de la ciudad
+            </h1>
+            
+        </nav>
+
+    </header>
+    <!-- contenido principal -->
+    <main>
+            
+        <!-- titulo secundario -->
+        <section>
+            <h2 class="h2-contacto">
+            Policia de la Ciudad
+            </h2>
+        </section>
+
+        <!--contenedor del main principal -->
+        <div class="contacto-main">
+
+            <!--titulo de la division-->
+            <div class="contenedor-titulo">
+                <h3 class="contenedor-titulo-h3c">
+                    Acceso a la Plataforma Interactiva
+                </h3>
+            </div>
+
+        
+            <div id="contenedor-central">
+                
+
+                <div id="div-formulario-log">
+                    
+                    
+            
+                    <form>
+
+                        <!--linea para el nombre-->
+                        <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                            <label for="usuario">Ingrese su Usuario</label><br><br>
+                            <input type="text" placeholder="Usuario"  id="usuario" /><br><br>
+                        </div>
+                        <!--linea para el apellido-->
+                        <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                            <label for="constraseña">Ingrese su Contraseña</label><br><br>
+                            <input type="text" placeholder="Contraseña"  id="contraseña" /><br><br>
+                        </div>
+
+                            <button  type="button" id="btn_ingresar">Ingresar</button> <br><br>
+                            <button  type="button" id="btn_nuevo_usuario">Nuevo Usuario</button>                  
+            
+                    </form>
+            
+                </div>
+                
+
+                <div id="div-formulario-registro" style="display: none;">
+
+                    <div id="avisos">
+                    </div>
+                    
+            
+                    <form>
+    
+                        <!--linea para el nombre-->
+                        <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                            <label for="usuario">Ingrese cual sera su nombre de usuario</label><br><br>
+                            <input type="text" placeholder="nombre de usuario"  id="nuevo_usuario" /><br><br>
+                        </div>
+                        <!--linea para el apellido-->
+                        <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                            <label for="contraseña">Defina su Contraseña</label><br><br>
+                            <input type="text" placeholder="Ingrese que contraseña desea - Eliga con sabiduria"  id="nuevo_contraseña" /><br><br>
+                        </div>
+                        <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                            <label for="nombre">Ingrese su Nombre</label><br><br>
+                            <input type="text" placeholder="Ingrese por favor su nombre"  id="nuevo_nombre" /><br><br>
+                        </div>
+                        <!--linea para el apellido-->
+                        <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                            <label for="apellido">Ingrese por ultimo su apellido</label><br><br>
+                            <input type="text" placeholder="Sciarretta"  id="nuevo_apellido" /><br><br>
+                        </div>   
+                                
+                            <button  type="button" id="btn_registrar">Nuevo Usuario</button> <br><br>
+                            <button  type="button" id="btn_volver_inicio" class="boton-entidades"> <=== Volver al Inicio</button>
+
+                
+                    </form>
+                </div>
+                
+            </div>
+
+            <div id="entidades-central" style="display: none;">
+                <h3>Elija la Opción con la que desea proceder</h3>
+                <ul>
+                    <li>
+                        <label for="denuncia">Realizar una denuncia</label>
+                        <button type="button" id="btn_denuncia" class="boton-entidades">Denuncia</button>
+                    </li>
+                    <li>
+                        <label for="bancos">Consultar Base de Datos de Entidades Bancarias</label>
+                        <button type="button" id="btn_bancos" class="boton-entidades">Bancos</button>
+                    </li>
+                    <li>
+                        <label for="delitos">Consultar Estadísticas sobre Delitos</label>
+                        <button type="button" id="btn_estadisticas" class="boton-entidades">Estadísticas</button>
+                    </li>
+                </ul>
+                <button class="boton-entidades"><a class="dropdown-item" href="../index.html" class="boton-entidades">Volver al Inicio</a></button>
+            </div>               
+            <div id="entidades-container" style="display: none;">
+
+                <button type="button" id="btn_buscar">Buscar</button>
+                <input type="text" id="buscar-entidad" placeholder="Buscar entidad...">
+                
+
+                <button id="nuevaEntidad">Agregar Entidad Bancaria</button>
+                <button  type="button" id="btn_volver_inicio2" class="boton-entidades"> <=== Volver al Inicio</button>
+
+            </div>
+
+            <div id="delitos-container" style="display: none;">
+
+                <button type="button" id="btn_buscar">Buscar</button>
+                <input type="text" id="buscar-delito" placeholder="Buscar delito...">   
+                             
+
+            </div>
+            
+
+            <div id="div-formulario-denuncia" style="display: none;">
+
+                <div id="avisos-denuncia">
+                </div>
+                
+                <form>
+                    <!-- Línea para la fecha -->
+                    <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                        <label for="denuncia_fecha">Ingrese la fecha del hecho</label><br><br>
+                        <input type="text" placeholder="Fecha" id="denuncia_fecha" /><br><br>
+                    </div>
+                    <!-- Línea para el tipo de delito -->
+                    <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                        <label for="denuncia_delito">Ingrese el tipo de delito</label><br><br>
+                        <input type="text" placeholder="Tipo de delito" id="denuncia_delito" /><br><br>
+                    </div>
+                    <!-- Línea para la entidad -->
+                    <div class="contacto-contenedor-elementos-formulario-informacion-linea">
+                        <label for="denuncia_entidad">Ingrese la entidad bancaria</label><br><br>
+                        <input type="text" placeholder="Entidad bancaria" id="denuncia_entidad" /><br><br>
+                    </div>
+                    <button type="button" id="btn_nueva_denuncia">Realizar Denuncia</button><br><br>                    
+                    
+                </form>
+            </div>
+               
+                
+        </div>
+            
+    </main>    
+    
+    <!-- Pie de pagina -->
+    <footer>
+        <p>
+            ® 2023 Drotar-Team, Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!---------------------------------------------------------  AQUI AGREGE LOS SCRIPTS DE JS ---------------------------------------------------------------->
+    <!---------------------------------------------------------  AQUI AGREGE LOS SCRIPTS DE JS ---------------------------------------------------------------->
+    <!---------------------------------------------------------  AQUI AGREGE LOS SCRIPTS DE JS ---------------------------------------------------------------->
+    <script src="../pages-js/estadisticas.js"></script>
+    <script src="../pages-js/denuncias.js"></script>    
+    <script src="../pages-js/bancos.js"> </script>
+    <script src="../pages-js/usuarios.js"></script>
+    <script src="../pages-js/ingreso.js"></script>
+    <script src="../pages-js/index.js"></script>
+</body>
+</html>
