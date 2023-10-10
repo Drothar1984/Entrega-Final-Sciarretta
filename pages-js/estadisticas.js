@@ -52,3 +52,45 @@ function volverAceroDelitos() {
         tarjeta.remove();
     });
 }
+
+
+
+
+function resultadosDeBusquedaDelitos(resultados) {
+    
+    const divContenedorDelitos = document.getElementById("delitos-container");
+    
+    volverAceroDelitos();
+    
+    resultados.forEach((resultado) => {
+        const tarjeta = crearTarjetaDelito(resultado);
+        divContenedorDelitos.appendChild(tarjeta);
+    });
+}
+
+
+//boton de busqueda 
+const btnBuscarDelito = document.getElementById("btn_buscar_delito");
+
+
+btnBuscarDelito.addEventListener("click", function () {
+    const textoBusqueda = document.getElementById("buscar-delito").value;
+
+    if (textoBusqueda !== "") {
+        
+        const resultados = denuncias.filter((delito) =>
+        denuncias.delito.toLowerCase().includes(textoBusqueda.toLowerCase())
+        );
+
+        if (resultados.length > 0) {
+            resultadosDeBusquedaDelitos(resultados);
+        } else {
+            alert ("No se encontraron entidades con ese nombre.");
+        }
+    } else {
+        alert("El campo de búsqueda está vacío.");
+    }
+
+    alert("Búsqueda de delitos:", textoBusqueda);
+});
+

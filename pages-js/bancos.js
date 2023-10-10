@@ -86,35 +86,41 @@ function volverAcero() {
 
 
 
-
-/*
-function busquedaEntidad(){ //NO PUDE HACER QUE FUNCIONE LA BUSQUEDA Y LE DI MIL VUELTAS  :(
-
-    const busqueda = document.getElementById("entidades-container");
-    const buscar = document.getElementById("buscar");
-    //contenedor.innerHTML = '';
-
-    const resultadoBusquedaEntidad = entidades.find((el) => el.nombre == )
-
-
-
-   // Recorremos el arreglo de entidades a mostrar
-    entidades.forEach((elemt) => {
-    const elemt = crearTarjetaEntidad(entidad);
-    contenedor.appendChild(tarjeta);
-
+function resultadosDeBusqueda(resultados) {
+    
+    const divContenedorEntidades = document.getElementById("entidades-container");
+    
+    volverAcero();
+    
+    resultados.forEach((resultado) => {
+        const tarjeta = crearTarjetaEntidad(resultado);
+        divContenedorEntidades.appendChild(tarjeta);
     });
 }
 
 
-btnBusquedaEntidades.addEventListener("keydown", function () {
-    //si funcion X es true
-    if (busquedaEntidad()){
+//boton de busqueda 
+const btnBuscarEntidad = document.getElementById("btn_buscar");
 
+
+btnBuscarEntidad.addEventListener("click", function () {
+    const textoBusqueda = document.getElementById("buscar-entidad").value;
+
+    if (textoBusqueda !== "") {
         
-        
-            
-    
-    }  
-        
-});*/
+        const resultados = entidades.filter((entidad) =>
+            entidad.nombre.toLowerCase().includes(textoBusqueda.toLowerCase())
+        );
+
+        if (resultados.length > 0) {
+            resultadosDeBusqueda(resultados);
+        } else {
+            console.log("No se encontraron entidades con ese nombre.");
+        }
+    } else {
+        console.log("El campo de búsqueda está vacío.");
+    }
+
+    console.log("Búsqueda de entidad:", textoBusqueda);
+});
+

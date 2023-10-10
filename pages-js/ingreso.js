@@ -35,8 +35,7 @@ const btnEstadistica = document.getElementById("btn_estadisticas");
 
 //sector entidades
 
-//boton de busqueda 
-const btnBuscarEntidad = document.getElementById("btn_buscar");
+
 //para agregar una entidad nueva
 const btnAgregarEntidad = document.getElementById("nuevaEntidad");
 //para buscar una entidad en particular
@@ -52,6 +51,8 @@ const btnNuevaDenuncia = document.getElementById("btn_nueva_denuncia");
 const btnVolverInicio4 = document.getElementById("btn_volver_inicio4");
 
 //sector estadisticas
+//para buscar en estadisticas un delito --- PROXIMAMENTE MEJORADO
+const btnBusquedaDelitos = document.getElementById("btn_buscar_delito");
 //para volver al sector menu 
 const btnVolverInicio3 = document.getElementById("btn_volver_inicio3");
 
@@ -209,12 +210,24 @@ btnVolverInicio4.addEventListener("click",  () => {
     divFormularioRegistro.style.display = "none";
 
 })
-    
+
+/*
 btnBuscarEntidad.addEventListener("click", function () {
 
     const textoBusqueda = document.getElementById("buscar-entidad").value;
 
+    if(textoBusqueda != ""){
+
+        const resultadoB = coleccion_bancos.find((el) => el.nombre == textoBusqueda)
+
+        generarTarjetasEntidades(resultadoB)
+
+    }
     
+    
+
+
     console.log("Búsqueda de entidad:", textoBusqueda);
 
-});
+});*/
+
