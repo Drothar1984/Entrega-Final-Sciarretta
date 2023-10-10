@@ -1,4 +1,6 @@
-const usuarios = [
+const key_coleccion_datos = "datos"; 
+
+let usuarios = JSON.parse(localStorage.getItem(key_coleccion_datos)) || [
     { user: "santiago", pass: "000001", nombre: "Santiago", apellido: "Sciarretta", tipo: "Admin" },
     { user: "nicolas", pass: "000002", nombre: "Nicolas", apellido: "Martini", tipo: "Admin" },
     { user: "Tutor", pass: "000003", nombre: "Tutor", apellido: "Corrector", tipo: "Admin" },
@@ -6,39 +8,33 @@ const usuarios = [
 ];
 
 
-
 class Usuario {
-
     
-    constructor(usuario, contraseña, nombre, apellido){
+    constructor(usuario, contraseña, nombre, apellido) {
 
         this.usuario = usuario;
         this.pass = contraseña;
         this.nombre = nombre;
         this.apellido = apellido;
-
+        this.tipo = "Regular"; 
     }
-
     
     static getInstance(u){
         return new Usuario(u.usuario, u.contraseña, u.nombre, u.apellido);
-    }
-    
+    }    
 
     getTipo(){
 
         return this.tipo;
+
     }
 }
-
-
 
 
 function validarUsuario() {
     
     const usuario = document.getElementById("usuario").value;
     const contraseña = document.getElementById("contraseña").value;
-
     
     const usuarioEncontrado = usuarios.find((u) => u.user === usuario && u.pass === contraseña);
 
@@ -54,6 +50,7 @@ function validarUsuario() {
         
         alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
     }
+
 }
 
 
@@ -67,7 +64,7 @@ function validacionRegistro() {
     let nuevoNombre = document.getElementById("nuevo_nombre").value;
     let nuevoApellido = document.getElementById("nuevo_apellido").value;
     
-    let arreglo_mensajes = new Array();
+    let arreglo_mensajes = [];
 
     if (nuevoUsuario === "" || nuevoUsuario === null) {
         arreglo_mensajes.push("Ingrese usuario");
@@ -96,7 +93,7 @@ function validacionRegistro() {
 
         avisos.appendChild(lista);
 
-        console.log
+        return false;
         
     }
 
@@ -111,9 +108,11 @@ function validacionRegistro() {
     usuarios.push(nuevoUsuarioAgregar);
     usuario_operando.push(nuevoUsuarioAgregar);
 
+    localStorage.setItem(key_coleccion_datos, JSON.stringify(usuarios));
+
     alert("Se ha registrado con éxito.\n¡Bienvenido " + nuevoUsuarioAgregar.nombre + "!");
     
-    return arreglo_mensajes.length == 0;
+    return true;
    
 }
 
@@ -127,9 +126,6 @@ function  crear_li (mensaje){
     
     return li;
  }
-
-
-
 
 function nuevoRegistro(){
 

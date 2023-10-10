@@ -1,6 +1,6 @@
-
+const coleccion_bancos = "bancos"; 
 //arreglo con objetos que contengan los distintos bancos registrados en el pais, pudiendose agregar nuevos, que deben ser a posteriori verificados
-const entidades = [
+let entidades = JSON.parse(localStorage.getItem(coleccion_bancos)) || [
     {entidad: 1, nombre: "BANCO DE GALICIA Y BUENOS AIRES S.A.U.", direccion:"Tte. Gral. Juan Domingo Perón 407, C1038 CABA", telfono: "0810-444-6500", eventos: 0},
     {entidad: 2, nombre: "BANCO DE LA NACION ARGENTINA", direccion:"Bartolome Mitre 326, C1036 CABA", telfono: "4347-6000", eventos: 0},
     {entidad: 3, nombre: "BANCO DE LA PROVINCIA DE BUENOS AIRES", direccion:"Bartolomé Mitre 430, C1036 CABA", telfono: "0810-22-22776", eventos: 0},
@@ -18,7 +18,6 @@ function generarTarjetasEntidades() {
         divContenedorEntidades.appendChild(tarjeta);
     });
 }
-
 
 //funcion para crear una tarjeta de entidad bancaria
 function crearTarjetaEntidad(entidad) {
@@ -45,15 +44,12 @@ function crearTarjetaEntidad(entidad) {
     return tarjeta;
 }
 
-
 function agregarNuevaEntidad() {
     const nombre = prompt("Ingrese el nombre de la nueva entidad:");
     const direccion = prompt("Ingrese la dirección:");
-    const telefono = prompt("Ingrese el teléfono:");
+    const telefono = prompt("Ingrese el teléfono:");    
     
-    
-    if (nombre && direccion && telefono) {
-        
+    if (nombre && direccion && telefono) {        
         
         const nuevaEntidad = {
             entidad: entidades.length + 1, 
@@ -62,14 +58,12 @@ function agregarNuevaEntidad() {
             telefono: telefono,
             eventos: 0,
         };
-
         
+        alert("ENTIDAD AGREGADA CON EXITO!!!");
+
         entidades.push(nuevaEntidad);
-
         
-        localStorage.setItem("entidades", JSON.stringify(entidades));
-
-    
+        localStorage.setItem(coleccion_bancos, JSON.stringify(entidades));    
         
         const tarjeta = crearTarjetaEntidad(nuevaEntidad);
         divContenedorEntidades.appendChild(tarjeta);
@@ -78,6 +72,11 @@ function agregarNuevaEntidad() {
         alert("Por favor, ingrese todos los datos de la entidad bancaria.");
     }
 }
+
+
+
+
+
 
 /*
 function busquedaEntidad(){ //NO PUDE HACER QUE FUNCIONE LA BUSQUEDA Y LE DI MIL VUELTAS  :(

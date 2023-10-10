@@ -1,55 +1,88 @@
-//localStorage.clear();
 
+
+//variable donde se va a guardar el usuario que esta operando
 let usuario_operando = new Array();
 
+//
 let avisos = document.getElementById("avisos");
 
 
+//REFERENCIA A LOS BOTONES
 
-const key_coleccion_datos = "datos";
+//pagina de logg
 
-// Obtener referencias a los botones
+//ingreso con usuario existente
 const btnIngresar = document.getElementById("btn_ingresar");
-
+//ingreso con usuario nuevo a plantilla nuevo usuario
 const btnNuevoUsuario = document.getElementById("btn_nuevo_usuario");
+//registro de nuevo usuario
+const btnRegistrar = document.getElementById("btn_registrar");
+// volver a la pagina de ingreso principal
+const btnVolverInicio = document.getElementById("btn_volver_inicio"); 
+
+
+//sector de menu 
+
+//para acceder a la plantilla de denuncias
+const btnDenuncia = document.getElementById("btn_denuncia")
+//para volver al sector menu 
+const btnVolverInicio2 = document.getElementById("btn_volver_inicio2");
+//para acceder a la plantilla de los bancos
+const btnBancos = document.getElementById("btn_bancos");
+//para acceder a la plantilla de estadisticas
+const btnEstadistica = document.getElementById("btn_estadisticas");
+
+//sector entidades
+
+//para agregar una entidad nueva
+const btnAgregarEntidad = document.getElementById("nuevaEntidad");
+//para buscar una entidad en particular
+const btnBusquedaEntidades = document.getElementById("btn_buscar");
+
+//sector de denuncias 
+ 
+//nueva denuncia principal
+const btnNuevaDenuncia = document.getElementById("btn_nueva_denuncia");
+
+
+
+//REFERENIA A LOS ELEMENTOS DIV
+
+//contenedor principal de logg
+const divcontenedorcentral = document.getElementById("contenedor-central");
+
+//contenedor de usuario ya registrado
+const divFormularioLog = document.getElementById("div-formulario-log");
+
+//contenedor de nuevo registro
 const formNuevoUsuario = document.getElementById("div-formulario-registro");
 
-
-const btnRegistrar = document.getElementById("btn_registrar");
-const btnVolverInicio = document.getElementById("btn_volver_inicio"); 
-const btnVolverInicio2 = document.getElementById("btn_volver_inicio2"); 
-
- 
-
-const btnDenuncia = document.getElementById("btn_denuncia")
-
-const btnBancos = document.getElementById("btn_bancos");
-const btnAgregarEntidad = document.getElementById("nuevaEntidad");
-const btnBusquedaEntidades = document.getElementById("btn_buscar");
-const btnEstadistica = document.getElementById("btn_estadisticas")
-
-
-// Obtener referencias a los elementos div
-
-const divcontenedorcentral = document.getElementById("contenedor-central")
-const divFormularioLog = document.getElementById("div-formulario-log");
+//contenedor sector denuncias
 const divFormularioRegistro = document.getElementById("div-formulario-denuncia");
-const divEntidadesCentral = document.getElementById("entidades-central")
 
-const divContenedorDelitos = document.getElementById("delitos-container")
-const divContenedorEntidades = document.getElementById("entidades-container")
-const btnNuevaDenuncia = document.getElementById("btn_nueva_denuncia")
+//contenedor sector general entidades
+const divEntidadesCentral = document.getElementById("entidades-central");
+
+//contenedor exclusivo para las entidades
+const divContenedorEntidades = document.getElementById("entidades-container");
+
+//contenedor sector estadistica de delitos
+const divContenedorDelitos = document.getElementById("delitos-container");
+
+//contenedor sector delitos
 const divContainerEstadistica = document.getElementById("delitos-container")
 
 
+
+
+
+//boton de ingreso
 btnIngresar.addEventListener("click", () => {
-    if (validarUsuario()) {
-     
+    
+    if (validarUsuario()) {     
         
     }
 });
-
-
 
 
 
@@ -63,13 +96,12 @@ btnNuevoUsuario.addEventListener("click", function () {
 btnRegistrar.addEventListener("click", function () {
     
     if (validacionRegistro()){
-
         
         nuevoRegistro();
+
         divFormularioRegistro.style.display = "none";
-        divEntidadesCentral.style.display = "block";
-        
-            
+
+        divEntidadesCentral.style.display = "block";            
     
     }  
         
@@ -78,17 +110,20 @@ btnRegistrar.addEventListener("click", function () {
 btnVolverInicio.addEventListener("click",  () => {
 
     
-    divFormularioLog.style.display = "block";
-    
+    divFormularioLog.style.display = "block";    
     
     formNuevoUsuario.style.display = "none";
 
 })
 
+
+
 btnBancos.addEventListener("click", function () {
     
     divEntidadesCentral.style.display = "none"
+
     divContenedorEntidades.style.display = "block"
+    
     generarTarjetasEntidades()
 
 })
@@ -104,6 +139,7 @@ btnAgregarEntidad.addEventListener("click", function () {
 btnDenuncia.addEventListener("click", function () {
     
     divEntidadesCentral.style.display = "none"
+
     divFormularioRegistro.style.display = "block"
     
 
@@ -111,18 +147,22 @@ btnDenuncia.addEventListener("click", function () {
 
 
 btnNuevaDenuncia.addEventListener("click", function () {
+
     nuevaDenuncia();
+
 });
 
 btnEstadistica.addEventListener("click", function (){
 
     divEntidadesCentral.style.display = "none"
+
     divContainerEstadistica.style.display = "block"
+
     generarTarjetasDelitos()
 
 })
 
-
+    
 btnVolverInicio2.addEventListener("click",  () => {
 
     
@@ -131,5 +171,10 @@ btnVolverInicio2.addEventListener("click",  () => {
     divFormularioRegistro.style.display = "none";    
     divContainerEstadistica.style.display = "none";
     formNuevoUsuario.style.display = "none";
+    divContenedorEntidades.style.display = "none";
+    divFormularioRegistro.style.display = "none";
 
 })
+
+    
+    
