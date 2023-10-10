@@ -9,8 +9,9 @@ let entidades = JSON.parse(localStorage.getItem(coleccion_bancos)) || [
 
 
 //funcion para generar tarjetas visuales de entidades bancarias
-function generarTarjetasEntidades() {
-  
+function generarTarjetasEntidades() {   
+
+    volverAcero();
 
     //recorremos el arreglo de entidades
     entidades.forEach((entidad) => {
@@ -44,6 +45,7 @@ function crearTarjetaEntidad(entidad) {
     return tarjeta;
 }
 
+//funcion para agregar una nueva entidad
 function agregarNuevaEntidad() {
     const nombre = prompt("Ingrese el nombre de la nueva entidad:");
     const direccion = prompt("Ingrese la dirección:");
@@ -74,6 +76,13 @@ function agregarNuevaEntidad() {
 }
 
 
+//funcion para que me borre las tarjetas creadas -- sino cada vez que entraba y salia me las duplicaba
+function volverAcero() {
+    const tarjetas = document.querySelectorAll(".entidad-tarjeta");
+    tarjetas.forEach((tarjeta) => {
+        tarjeta.remove();
+    });
+}
 
 
 

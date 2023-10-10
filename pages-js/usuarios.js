@@ -57,7 +57,6 @@ function validarUsuario() {
 function validacionRegistro() {
 
     avisos.innerHTML = "";
-
     
     let nuevoUsuario = document.getElementById("nuevo_usuario").value;
     let nuevaContraseña = document.getElementById("nuevo_contraseña").value;

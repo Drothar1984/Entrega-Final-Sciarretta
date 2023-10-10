@@ -3,8 +3,11 @@
 //variable donde se va a guardar el usuario que esta operando
 let usuario_operando = new Array();
 
-//
+//aviso de faltantes de datos al momento de registrarse 
 let avisos = document.getElementById("avisos");
+
+//aviso de faltantes de datos al momento de realizar una denuncia 
+let avisos_denuncia = document.getElementById("avisos-denuncia");
 
 
 //REFERENCIA A LOS BOTONES
@@ -25,8 +28,6 @@ const btnVolverInicio = document.getElementById("btn_volver_inicio");
 
 //para acceder a la plantilla de denuncias
 const btnDenuncia = document.getElementById("btn_denuncia")
-//para volver al sector menu 
-const btnVolverInicio2 = document.getElementById("btn_volver_inicio2");
 //para acceder a la plantilla de los bancos
 const btnBancos = document.getElementById("btn_bancos");
 //para acceder a la plantilla de estadisticas
@@ -34,16 +35,25 @@ const btnEstadistica = document.getElementById("btn_estadisticas");
 
 //sector entidades
 
+//boton de busqueda 
+const btnBuscarEntidad = document.getElementById("btn_buscar");
 //para agregar una entidad nueva
 const btnAgregarEntidad = document.getElementById("nuevaEntidad");
 //para buscar una entidad en particular
 const btnBusquedaEntidades = document.getElementById("btn_buscar");
+//para volver al sector menu 
+const btnVolverInicio2 = document.getElementById("btn_volver_inicio2");
 
 //sector de denuncias 
  
 //nueva denuncia principal
 const btnNuevaDenuncia = document.getElementById("btn_nueva_denuncia");
+//para volver al sector menu 
+const btnVolverInicio4 = document.getElementById("btn_volver_inicio4");
 
+//sector estadisticas
+//para volver al sector menu 
+const btnVolverInicio3 = document.getElementById("btn_volver_inicio3");
 
 
 //REFERENIA A LOS ELEMENTOS DIV
@@ -165,9 +175,8 @@ btnEstadistica.addEventListener("click", function (){
     
 btnVolverInicio2.addEventListener("click",  () => {
 
-    
     divEntidadesCentral.style.display = "block";
-
+   
     divFormularioRegistro.style.display = "none";    
     divContainerEstadistica.style.display = "none";
     formNuevoUsuario.style.display = "none";
@@ -176,5 +185,36 @@ btnVolverInicio2.addEventListener("click",  () => {
 
 })
 
+
+btnVolverInicio3.addEventListener("click",  () => {
+
+    divEntidadesCentral.style.display = "block";
+   
+    divFormularioRegistro.style.display = "none";    
+    divContainerEstadistica.style.display = "none";
+    formNuevoUsuario.style.display = "none";
+    divContenedorEntidades.style.display = "none";
+    divFormularioRegistro.style.display = "none";
+
+})
     
+btnVolverInicio4.addEventListener("click",  () => {
+
+    divEntidadesCentral.style.display = "block";
+   
+    divFormularioRegistro.style.display = "none";    
+    divContainerEstadistica.style.display = "none";
+    formNuevoUsuario.style.display = "none";
+    divContenedorEntidades.style.display = "none";
+    divFormularioRegistro.style.display = "none";
+
+})
     
+btnBuscarEntidad.addEventListener("click", function () {
+
+    const textoBusqueda = document.getElementById("buscar-entidad").value;
+
+    
+    console.log("Búsqueda de entidad:", textoBusqueda);
+
+});

@@ -8,14 +8,18 @@ const denuncias = JSON.parse(localStorage.getItem(coleccion_delitos)) || [
     {fecha: 16-3-2023, delito: "Sustraccion de Identidad", entidad: "Banco Ciudad", autor: "visita"}
 ]
 
+//funcion para generar las tarjetas
 function generarTarjetasDelitos() {    
     
+    volverAceroDelitos();
+
     denuncias.forEach((denuncia) => {
         const tarjeta = crearTarjetaDelito(denuncia);
         divContenedorDelitos.appendChild(tarjeta);
     });
 }
 
+//funcion para crear las tarjetas de los delitos
 function crearTarjetaDelito(denuncia) {
     const tarjeta = document.createElement("div");
     tarjeta.classList.add("delito-tarjeta");
@@ -39,4 +43,12 @@ function crearTarjetaDelito(denuncia) {
     tarjeta.appendChild(autor);
 
     return tarjeta;
+}
+
+//funcion para que me borre las tarjetas creadas -- sino cada vez que entraba y salia me las duplicaba
+function volverAceroDelitos() {
+    const tarjetas = document.querySelectorAll(".delito-tarjeta");
+    tarjetas.forEach((tarjeta) => {
+        tarjeta.remove();
+    });
 }
