@@ -115,12 +115,12 @@ btnBuscarEntidad.addEventListener("click", function () {
         if (resultados.length > 0) {
             resultadosDeBusqueda(resultados);
         } else {
-            console.log("No se encontraron entidades con ese nombre.");
+            alert ("No se encontraron entidades con ese nombre.");
         }
     } else {
-        console.log("El campo de búsqueda está vacío.");
+        alert ("El campo de búsqueda está vacío.");
     }
 
-    console.log("Búsqueda de entidad:", textoBusqueda);
+    alert ("Búsqueda de entidad: " + textoBusqueda);
 });
 

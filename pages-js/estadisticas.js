@@ -65,7 +65,9 @@ function resultadosDeBusquedaDelitos(resultados) {
     resultados.forEach((resultado) => {
         const tarjeta = crearTarjetaDelito(resultado);
         divContenedorDelitos.appendChild(tarjeta);
+
     });
+    
 }
 
 
@@ -74,12 +76,12 @@ const btnBuscarDelito = document.getElementById("btn_buscar_delito");
 
 
 btnBuscarDelito.addEventListener("click", function () {
-    const textoBusqueda = document.getElementById("buscar-delito").value;
+    const textoBusquedadelitos = document.getElementById("buscar-delito").value;
 
-    if (textoBusqueda !== "") {
+    if (textoBusquedadelitos !== "") {
         
         const resultados = denuncias.filter((delito) =>
-        denuncias.delito.toLowerCase().includes(textoBusqueda.toLowerCase())
+        delito.delito.toLowerCase().includes(textoBusquedadelitos.toLowerCase())
         );
 
         if (resultados.length > 0) {
@@ -91,6 +93,5 @@ btnBuscarDelito.addEventListener("click", function () {
         alert("El campo de búsqueda está vacío.");
     }
 
-    alert("Búsqueda de delitos:", textoBusqueda);
+    alert("Búsqueda de delitos: " + textoBusquedadelitos);
 });
-

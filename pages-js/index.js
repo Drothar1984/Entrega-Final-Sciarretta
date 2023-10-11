@@ -1,77 +1,37 @@
-/*
-//funcion para mostrar un elemento en especial
-function mostrar(elementId) {
-    const elemento = document.getElementById(elementId);
-    if (elemento) {
-        elemento.style.display = "block";
-    }
+
+
+function  generadorContenedorBancos (){
+
+    volverAceroBancos();
+
+
+
+    const contenedor_central_entidades = document.createElement("div");
+    contenedor_central_entidades.classList.add("contenedor_central_entidades");
+
+    const titulo = document.createElement("h2");
+    titulo.textContent = "Entidades Bancarias";
+
+    const label_usuario = document.createElement("label");
+    label_usuario.textContent = "Ingrese su usuario";
+    
+
+    const input_usuario = document.createElement("input");
+    input_usuario.textContent = "Ingrese su usuario";
+
+    contenedor_central_entidades.appendChild(titulo);
+    contenedor_central_entidades.appendChild(label_usuario);
+    contenedor_central_entidades.appendChild(input_usuario);
+    
+    return contenedor_central_entidades;
+
 }
 
 
-//funcion para ocultar un elemento en especial
-function ocultar(elementId) {
-    const elemento = document.getElementById(elementId);
-    if (elemento) {
-        elemento.style.display = "none";
-    }
+function volverAceroBancos (){
+
+    const contenedor = document.querySelectorAll(".div-formulario-registro");
+    contenedor.forEach ((contenido) => {
+        contenido.remove()
+    });
 }
-
-
-
-
-
-
-btnBancos.addEventListener("click", function () {
-    
-    ocultar("contenedor-central");
-    mostrar("entidades-central")
-    divEntidadesCentral.style.display = "none"
-    divContenedorEntidades.style.display = "block"
-    generarTarjetasEntidades()
-
-})
-
-
-btnAgregarEntidad.addEventListener("click", function () {
-
-    agregarNuevaEntidad()
-
-})
-
-
-btnDenuncia.addEventListener("click", function () {
-    
-    divEntidadesCentral.style.display = "none"
-    divFormularioRegistro.style.display = "block"
-    
-
-})
-
-
-btnNuevaDenuncia.addEventListener("click", function () {
-    nuevaDenuncia();
-});
-
-btnEstadistica.addEventListener("click", function (){
-
-    divEntidadesCentral.style.display = "none"
-    divContainerEstadistica.style.display = "block"
-    generarTarjetasDelitos()
-
-})
-
-
-btnVolverInicio2.addEventListener("click",  function () {
-
-    
-    divFormularioLog.style.display = "none";
-    formNuevoUsuario.style.display = "none";
-    divEntidadesCentral.style.display = "none";
-    divContenedorEntidades.style.display = "none";
-    divContainerEstadistica.style.display = "none";
-    
-    
-    divcontenedorcentral.style.display = "block";
-
-})
-*/
