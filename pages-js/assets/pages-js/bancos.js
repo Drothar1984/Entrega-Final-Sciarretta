@@ -15,10 +15,12 @@ function generarTarjetasEntidades() {
 
     volverAceroLog();
 
+    //contenedor individual
     const ctnIndBanco = document.createElement("div");
     ctnIndBanco.classList.add ("ctnIndividual")
     ctnIndBanco.id = "ctnIndBanco"
 
+    //div contenedor
     const ctnAccBanco = document.createElement("div");
     ctnAccBanco.classList.add ("ctnAccBanco")
     ctnAccBanco.id = "ctnAccBanco"
@@ -120,6 +122,7 @@ function generarTarjetasEntidades() {
         
     })
 
+    //vinculamos los elementos
     document.getElementById("registro-principal").appendChild(ctnIndBanco);
 
     document.getElementById("ctnIndBanco").appendChild(ctnAccBanco);      

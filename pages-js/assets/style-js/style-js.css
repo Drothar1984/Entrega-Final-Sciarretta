@@ -269,6 +269,8 @@ label {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  color: #2d2d2d;
+  border: 2px solid #4d4c4c;
   background-color: #fff;  
   border-radius: 10px;
   margin: 5px;

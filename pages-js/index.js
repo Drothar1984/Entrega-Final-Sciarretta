@@ -165,16 +165,6 @@ function volverAceroLog (){
 
 }
 
-/* VERSION B
-//funcion para que me borre las tarjetas creadas -- sino cada vez que entraba y salia me las duplicaba
-function volverAceroLog() {
-    const tarjetas = document.querySelectorAll(".contenedor_central_log");
-    tarjetas.forEach((tarjeta) => {
-        tarjeta.remove();
-    });
-}
-*/
-
 
 //funcion para generara el contenedor secundario de ingreso - nuevo registro
 function generadorContenedorRegistro () {

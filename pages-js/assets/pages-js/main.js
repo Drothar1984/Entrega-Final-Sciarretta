@@ -75,6 +75,15 @@ function generadorMenu (){
     btn_ingreso_estadistica.classList.add("btn_menu");
     btn_ingreso_estadistica.id = "btn_ingreso_estadistica";
 
+    btn_ingreso_estadistica.addEventListener("click", () => {
+
+        volverAceroLog();
+
+        generadorEstadistica ();
+
+    })
+    
+
     //BOTON DE SALIDA
     const salida = document.createElement("button");
     salida.textContent = "Salir de la Plataforma";
