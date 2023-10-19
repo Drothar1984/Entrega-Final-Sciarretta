@@ -38,19 +38,27 @@ function generadorMenu (){
     })
 
     //DENUNCIAS
-    const ctnSecDenuncia = document.createElement("div");
-    ctnSecDenuncia.classList.add("contenedor_secundario");
+    const ctnSecCentral = document.createElement("div");
+    ctnSecCentral.classList.add("contenedor_secundario");
 
     //label 
-    const labelDenuncia = document.createElement("label");
-    labelDenuncia.classList.add("label_menu")
-    labelDenuncia.textContent = "Desea registrar una denuncia";
+    const labelCentral = document.createElement("label");
+    labelCentral.classList.add("label_menu")
+    labelCentral.textContent = "Banco Central";
 
     //boton 
-    const btn_ingreso_denuncia = document.createElement("button");
-    btn_ingreso_denuncia.textContent = "Ingresar";
-    btn_ingreso_denuncia.classList.add("btn_menu");
-    btn_ingreso_denuncia.id = "btn_ingreso_denuncia";
+    const btnCentral = document.createElement("button");
+    btnCentral.textContent = "Ingresar";
+    btnCentral.classList.add("btn_menu");
+    btnCentral.id = "btn_ingreso_central";
+
+    btnCentral.addEventListener("click", () => {
+
+        volverAceroLog();
+
+        generadorContenedorCentral();
+
+    })
 
     //ESTADISTICAS
     const ctnSecEstadistica = document.createElement("div");
@@ -119,9 +127,9 @@ function generadorMenu (){
     ctnSecBancos.appendChild(labelBancos);
     ctnSecBancos.appendChild(btn_ingreso_bancos);
     //DENUNCIAS
-    contenedorPrincipal.appendChild(ctnSecDenuncia);
-    ctnSecDenuncia.appendChild(labelDenuncia);
-    ctnSecDenuncia.appendChild(btn_ingreso_denuncia);
+    contenedorPrincipal.appendChild(ctnSecCentral);
+    ctnSecCentral.appendChild(labelCentral);
+    ctnSecCentral.appendChild(btnCentral);
     //ESTADISTICAS
     contenedorPrincipal.appendChild(ctnSecEstadistica);
     ctnSecEstadistica.appendChild(labelEstadistica);
