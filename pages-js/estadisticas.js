@@ -2,10 +2,10 @@ const coleccion_delitos = "delitos";
 
 //base de datos de los distintos delitos denunciados o registrados
 const denuncias = JSON.parse(localStorage.getItem(coleccion_delitos)) || [
-    {fecha: 11-2-2023, delito: "Phising", entidad: "Banco Galicia", autor: "santiago"},
-    {fecha: 14-1-2023, delito: "Punto de compromiso", entidad: "Banco Provincia", autor: "visita"},
-    {fecha: 21-5-2023, delito: "skimming", entidad: "Banco Nacion", autor: "nicolas"},
-    {fecha: 16-3-2023, delito: "Sustraccion de Identidad", entidad: "Banco Ciudad", autor: "visita"}
+    {fecha: "11-2-2023", delito: "Phising", entidad: "Banco Galicia", autor: "santiago"},
+    {fecha: "14-1-2023", delito: "Punto de compromiso", entidad: "Banco Provincia", autor: "visita"},
+    {fecha: "21-5-2023", delito: "skimming", entidad: "Banco Nacion", autor: "nicolas"},
+    {fecha: "16-3-2023", delito: "Sustraccion de Identidad", entidad: "Banco Ciudad", autor: "visita"}
 ]
 
 //funcion para generar las tarjetas

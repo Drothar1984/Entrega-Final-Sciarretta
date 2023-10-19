@@ -1,3 +1,19 @@
+/*reset general*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 80vh;
+  flex: 1;
+  padding: 1px;
+}
+
+/* ---------------------- LOGG ------------------------- */
+
 #registro-principal {
     display: flex;
     flex-direction: column;
@@ -6,13 +22,12 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;    
     border-radius: 10px;
-    margin: 50px;
-    padding: 50px;
+
 }
 
 .contenedor_central_log{
 
-    max-width: 500px;
+    /*max-width: 500px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,23 +44,29 @@
 
 
 input {
+
     width: 200px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 10px solid #000000;
+    border: 2px solid #2f2f2f;
     margin: 20px;
     padding: 10px;
     background-color: rgb(216, 216, 216);
+
 }
 
 label {
+
     width: 200px;
+    padding: 10px;    
+    /*border: 1px solid #ccc;*/
+    text-decoration: underline 1px solid #000000; ;
+    margin: 20px 20px 5px 20px;
     padding: 10px;
-    border: 1px solid #ccc;
-    margin: 20px;
-    padding: 10px;
+
 }
 
-button{
+.btn_ingreso {
     background-color: #dddddd;
     border: 5px solid #000000;
     height: 50px;
@@ -56,7 +77,7 @@ button{
     transition: 2s; 
 }
 
-button:hover {
+.btn_ingreso:hover {
     background-color: #6b6b6b;
     border: 5px solid #484848;
     box-shadow: 20px 20px 60px #343434;
@@ -64,3 +85,231 @@ button:hover {
     transition: 2s;
     border-radius: 100%; 
 }
+
+.button-registro{
+
+    background-color: #dddddd;
+    border: 5px solid #000000;
+    height: 50px;
+    width: 150px;
+    margin-top: 1px;
+    text-align: center;
+    border-radius: 10%;
+
+}
+
+.botones-container {
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 10px; 
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .button-registro {   
+    
+    padding: 5px 10px;
+    background-color: #024791;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .button-registro:hover {
+    background-color: #0068d8;
+  }
+
+
+  /*ZONA DE SWEETALERT2*/
+
+  body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+
+  ul, li {
+    list-style: none;
+}
+
+/* ---------------------- MENU ------------------------- */
+
+.contenedor_central_secundario {
+
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 50px;
+
+}
+
+.contenedor_secundario {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.btn_menu {   
+
+  padding: 5px 10px;
+  height: 50px;
+  width: 150px;
+  background-color: #acacac;
+  color: #2d2d2d;
+  border: 2px solid #4d4c4c;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+.btn_menu:hover {
+  background-color: #686868;
+  color: #fff;
+  
+}
+
+
+
+/* ---------------------- BANCOS ------------------------- */
+
+
+
+.ctnIndividual{
+
+  /*max-width: 1500px;*/
+  max-width: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 50px;
+
+}
+
+.tarjeta-denuncia{
+
+  /*max-width: 1500px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 50px;
+
+}
+
+
+
+.entidad-tarjeta{
+
+  flex: 1; 
+  width: 60vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+
+
+.btnBanco {   
+
+  padding: 5px 10px;
+  height: 50px;
+  width: 150px;
+  background-color: #acacac;
+  color: #2d2d2d;
+  border: 2px solid #4d4c4c;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+.btnBanco:hover {
+  background-color: #686868;
+  color: #fff;
+  
+}
+
+
+.denuncia-tarjeta{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #fff;  
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+
+}
+
+
+.btnVolverMenu{
+  padding: 5px 10px;
+  height: 50px;
+  width: 150px;  
+  background-color: #fe6565;
+  color: #050505;
+  border: 2px solid #4d4c4c;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+.btnVolverMenu:hover {
+  background-color: #ff1111;
+  color: #0a0a0a;
+}
+
+.btnAgregarDenuncia{
+
+  padding: 5px 10px;
+  height: 50px;
+  width: 150px;  
+  background-color: #59f894;
+  color: #050505;
+  border: 2px solid #4d4c4c;
+  cursor: pointer;
+  margin: 10px;
+
+
+}
+
+.btnAgregarDenuncia:hover {
+  background-color: #5bff29;
+  color: #000000;
+}
+           

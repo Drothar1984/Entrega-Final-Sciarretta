@@ -1,0 +1,20 @@
+{
+    "entidades": [
+      {"entidad": 1, "nombre": "BANCO DE GALICIA Y BUENOS AIRES S.A.U.", "direccion":"Tte. Gral. Juan Domingo Perón 407, C1038 CABA", "telefono": "0810-444-6500", "eventos": 0},
+      {"entidad": 2, "nombre": "BANCO DE LA NACION ARGENTINA", "direccion":"Bartolome Mitre 326, C1036 CABA", "telefono": "4347-6000", "eventos": 0},
+      {"entidad": 3, "nombre": "BANCO DE LA PROVINCIA DE BUENOS AIRES", "direccion":"Bartolomé Mitre 430, C1036 CABA", "telefono": "0810-22-22776", "eventos": 0},
+      {"entidad": 4, "nombre": "BANCO CIUDAD", "direccion":"Florida 302, C1313 CABA", "telefono": "4329-8600", "eventos": 0}
+    ],
+    "usuarios": [
+      { "user": "santiago", "pass": "000001", "nombre": "Santiago", "apellido": "Sciarretta", "tipo": "Admin" },
+      { "user": "nicolas", "pass": "000002", "nombre": "Nicolas", "apellido": "Martini", "tipo": "Admin" },
+      { "user": "Tutor", "pass": "000003", "nombre": "Tutor", "apellido": "Corrector", "tipo": "Admin" },
+      { "user": "visita", "pass": "000004", "nombre": "visita", "apellido": "anonimo", "tipo": "Regular" }
+    ],
+    "eventos": [
+      {"fecha": "11-2-2023", "delito": "Phising", "entidad": "Banco Galicia", "autor": "santiago"},
+      {"fecha": "14-1-2023", "delito": "Punto de compromiso", "entidad": "Banco Provincia", "autor": "visita"},
+      {"fecha": "21-5-2023", "delito": "skimming", "entidad": "Banco Nacion", "autor": "nicolas"},
+      {"fecha": "16-3-2023", "delito": "Sustraccion de Identidad", "entidad": "Banco Ciudad", "autor": "visita"}
+    ]
+}
